@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+    <channel>
+        <title>Comprar Movil Nuevo</title>
+        <atom:link href="public/feed" rel="self" type="application/rss+xml" />
+        <link>http://www.comprarmovilnuevo.es.test/</link>
+        <description>Web para comprar móviles nuevos en oferta</description>
+        <lastBuildDate>Fri, 14 Feb 2020 09:44:22 +0000</lastBuildDate>
+        <language>ES</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <item>
+            <title>El hotel mejora al verlo en persona respecto a las fotos. 3</title>
+            <link>http://www.comprarmovilnuevo.es.test/el-hotel-mejora-al-verlo-en-persona-respecto-a-las-fotos-3</link>
+            <pubDate>2020-02-12T00:02:12+00:00</pubDate>
+            <description>dsfadsfdsfadsfadsfdasfdasfasdgfdasfadsfdasgasdfasdgadsfdsfdasgsdfdsfasdgasdfdadsgfadsgasdfasdgasdgasdfadsgasdfasdg</description>
+        </item>
+        <item>
+            <title>El hotel mejora al verlo en persona respecto a las fotos. 3</title>
+            <link>http://www.comprarmovilnuevo.es.test/el-hotel-mejora-al-verlo-en-persona-respecto-a-las-fotos-3</link>
+            <pubDate>2020-02-12T00:04:21+00:00</pubDate>
+            <description>dsfadsfdsfadsfadsfdasfdasfasdgfdasfadsfdasgasdfasdgadsfdsfdasgsdfdsfasdgasdfdadsgfadsgasdfasdgasdgasdfadsgasdfasdg</description>
+        </item>
+        <item>
+            <title>El hotel mejora al verlo en persona respecto a las fotos.</title>
+            <link>http://www.comprarmovilnuevo.es.test/el-hotel-mejora-al-verlo-en-persona-respecto-a-las-fotos-</link>
+            <pubDate>2020-02-12T13:03:58+00:00</pubDate>
+            <description>fdghdfghdfghdgfhdgfhdgfdfghdgfhdgfhdgfhdgfhdgfhdgfhdgfhdgfhdfghdgfhdgfhdgfhdgfhgfhdfghgfhdgfhdgfhdgfhfdgh</description>
+        </item>
+        <item>
+            <title>Comprar Samsung Galaxy S10 en oferta</title>
+            <link>http://www.comprarmovilnuevo.es.test/comprar-samsung-galaxy-s10-en-oferta</link>
+            <pubDate>2020-02-14T09:44:22+00:00</pubDate>
+            <description>El samsung está uy bien afsdfasdfadsfasdfadsfasdfasdfasdfasdfadsfdasfasdfasdfasdfadsfadsfasdfasdfasdfasdfasd</description>
+        </item>
+    </channel>
+</rss>

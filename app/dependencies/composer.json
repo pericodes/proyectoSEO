@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.5",
+        "voku/html-min": "^4.1"
+    }
+}

@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% block jquery %}
+{% endblock %}
+{% block bootstrap_js %}
+{% endblock %}
+
+{% block css %}
+<style type="text/css">
+#mainPhoto img{
+    max-height: 22em;
+}
+#mainPhoto img, #postDescription img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+
+{% if includes["amazonSingleProduct"] %}
+<link rel="stylesheet" href="/public/css/amazonSingleProduct.css">
+<script src="/public/js/lazysizes.min.js" async=""></script>
+{% endif %}
+{% endblock %}
+{% block main %}
+<div class="card-body">
+<section id="post" class="border-bottom pb-3 container">
+    <header class="header">
+        <section id="mainPhoto">
+            {{imgHTML | raw}}
+        </section>
+        <section id="postTitle">
+            <h1>{{title}}</h1>
+        </section>
+    </header>
+
+    <section id="postDescription">
+        {{ description | raw}}
+    </section>
+    <section id="products">
+        
+    </section>
+
+    {% include  includes["amazonSingleProduct"] with 
+    {
+    'title': "Producto 1: fadsfasd", 
+    "productId" : "#", 
+    "affiliateTag" : "#", 
+    "image": "https://m.media-amazon.com/images/I/31vtVo4NJ3L.jpg",
+    "date": "30/01/2020",
+    "description": {1:"sdfdasfddsfgsdfgsdfgsdfgdfsgsdfgdfsgdsfgsdfgdfsgsdgdfsgsdfgdfsgsdfgsdfgsdfgdfsgsdfgsdfgsdfgsdfgsgsdfsdfgsdfgsdffgsdfsdfgsdgsgsdfgsdfgsdfgas",2: "dsfadsads", 3: "fdsfdsfa"},
+    "offert": "true",
+    "save": "5.00",
+    "originalPrice": "50.00",
+    "price": "45.00",
+    } %}
+
+    {% include  includes["amazonSingleProduct"] with 
+    {
+    'title': "Producto 2: afdsfa", 
+    "productId" : "#", 
+    "affiliateTag" : "#", 
+    "image": "https://m.media-amazon.com/images/I/31vtVo4NJ3L.jpg",
+    "date": "30/01/2020",
+    "description": {1:"sdfdasfddsfgsdfgsdfgsdfgdfsgsdfgdfsgdsfgsdfgdfsgsdgdfsgsdfgdfsgsdfgsdfgsdfgdfsgsdfgsdfgsdfgsdfgsgsdfsdfgsdfgsdffgsdfsdfgsdgsgsdfgsdfgsdfgas",2: "dsfadsads", 3: "fdsfdsfa"},
+    "offert": "true",
+    "save": "6.00",
+    "originalPrice": "50.00",
+    "price": "45.00",
+    } %}
+
+    <footer>
+        
+    </footer>
+    <section id="opinions" class="card card-body">
+        <section >
+
+        </section>
+        <section id="comments">
+            <h3>Añade tu cometario:</h3>
+            <form id="addComment" action="addComment" method="POST">
+                {% include  includes["coment"] with {'changeValoration': false} only %}
+                <section class="form-group mt-4 text-center">
+                    <input name="submit" type="submit" id="submit" class="btn btn-primary" value="Publicar comentario">
+                </section>
+            </form>
+        </section>
+        <ul class="product_comments row">
+            <li class="col-lg-12" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <meta itemprop="itemReviewed" content="Hummingbird printed t-shirt" />
+                <div class="row comment">
+                    <div class="comment_header col-md-12">
+                        <div class="star_content clearfix"  itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <meta itemprop="worstRating" content="1" />
+                            <meta itemprop="ratingValue" content="5" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+         
+                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                    </div>
+         
+                    <div class="comment_author_infos col-md-12">
+                        <span>Por</span>
+                        <span itemprop="author" class="author">John Doe</span>
+                        <span>el</span>
+                        <meta itemprop="datePublished" content="2019-04-26" />
+                        <span>26/04/2019</span>
+                    </div>    
+                    <div class="comment_details col-md-12">
+                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-12" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <meta itemprop="itemReviewed" content="Hummingbird printed t-shirt" />
+                <div class="row comment">
+                    <div class="comment_header col-md-12">
+                        <div class="star_content clearfix" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <meta itemprop="worstRating" content="1" />
+                            <meta itemprop="ratingValue" content="3" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+         
+                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                    </div>
+         
+                    <div class="comment_author_infos col-md-12">
+                        <span>Por</span>
+                        <span itemprop="author" class="author">Benny Hill</span>
+                        <span>el</span>
+                        <meta itemprop="datePublished" content="2019-03-15" />
+                        <span>15/03/2019</span>
+                    </div>    
+                    <div class="comment_details col-md-12">
+                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-12" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <meta itemprop="itemReviewed" content="Hummingbird printed t-shirt" />
+                <div class="row comment">
+                    <div class="comment_header col-md-12">
+                        <div class="star_content clearfix"  itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star"></div>
+                            <meta itemprop="worstRating" content="1" />
+                            <meta itemprop="ratingValue" content="4" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+         
+                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                    </div>
+         
+                    <div class="comment_author_infos col-md-12">
+                        <span>Por</span>
+                        <span itemprop="author" class="author">Brenda Bullock</span>
+                        <span>el</span>
+                        <meta itemprop="datePublished" content="2019-02-10" />
+                        <span>10/02/2019</span>
+                    </div>    
+                    <div class="comment_details col-md-12">
+                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</section>
+</div>
+{% endblock %}

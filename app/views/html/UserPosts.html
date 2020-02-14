@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="post container card-body">
+	<section class="form-row">
+		<div class="form-group col-11">
+			<label for="textSearch" class="sr-only">Buscar</label>
+			<input type="text" class="form-control" id="textSearch" placeholder="Buscar">
+		</div>
+		<div class="col-1">
+			<button type="submit" class="btn btn-primary" name="action" value="search" onclick="search()">Buscar</button>
+		</div>
+	</section>
+	<section id="posts">
+	
+
+	</section>
+</section>
+<style>
+
+</style>
+<script>
+
+	class Post {
+	constructor(id, title, href) {
+		this.id = id;
+		this.title = title;
+		this.href = href;
+	}
+	}
+	var posts = [];
+
+	{% for post in posts %}
+	posts.push(new Post("{{post['_id']}}", "{{post['title']}}", "{{post['link']}}"));
+	{% endfor%}
+
+	createTable();
+
+	function deletePost(id, element) {
+		let formData = new FormData();
+		formData.append("id", id);
+		formData.append("action", "delete");
+		console.log(id);
+		console.log(element);
+		
+		fetch(window.location.href , {
+				  method: 'POST', // or 'PUT'
+				  body: formData, // data can be `string` or {object}!
+				}).then(res => {
+					if(res.ok){
+						res.text().then(text => {
+							let postDeleted = JSON.parse(text);
+							if(postDeleted){
+								//element.parentNode.removeChild(element);
+								element.closest("tbody").removeChild(element.closest("tr"));
+							}else{
+								alert("Error: El post no se ha podido eliminar.")
+							}
+						}).catch(err => {
+							console.log("Error",err);
+							//document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+						}); 
+					}
+				}).catch(error => {
+					console.log("Error",error);
+					//document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+				});
+	}
+	
+	function createTable() {
+
+		document.getElementById("posts").removeChild(document.getElementById("posts").childNodes[0]);
+		if (posts.length > 0) {
+			let html = `<table class="table table-sm table-hover table-striped">
+			<thead>
+			<tr>
+				<th scope="col" style="width: 70%;">Título</th>
+				<td style="width: 15%; text-align: center;">Editar</td>
+				<td style="width: 15%; text-align: center;">Eliminar</td>
+			</tr>
+			</thead>
+			<tbody>`;
+			posts.forEach(post => {
+				html += `<tr>
+					<th scope="row"><a href="/${post.href}">${post.title}</a></th>
+					<td><button type="button" class="btn btn-warning" onclick="updatePost('${post.id}')" style="display: block; margin-left: auto; margin-right: auto;">Editar</button></td>
+					<td><button type="button" class="btn btn-danger" onclick="deletePost('${post.id}', this)" style="display: block; margin-left: auto; margin-right: auto;">Eliminar</button></td>
+				</tr>`;
+			});
+			html += `</tbody></table>`;
+
+			document.getElementById("posts").insertAdjacentHTML("afterbegin", html);
+		}else{
+			document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>No se encontraron posts</p>`);
+		}
+		
+	}
+	function search() {
+		let textSearch = document.getElementById("textSearch");
+
+		let formData = new FormData();
+		formData.append("text", textSearch.value);
+		formData.append("action", "search");
+		fetch(window.location.href , {
+				  method: 'POST', // or 'PUT'
+				  body: formData, // data can be `string` or {object}!
+				  /*headers:{
+				    'Content-Type': 'application/json'
+				  }*/
+				}).then(res => {
+					if(res.ok){
+						res.text().then(text => {
+							let data = JSON.parse(text);
+							posts = []; 
+							data.forEach(post => {
+								posts.push(new Post(post["_id"]["$oid"], post["title"], post["link"]))
+							});
+							createTable();
+
+						}).catch(err => {
+							console.log("Error",err);
+							document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+						}); 
+					}
+				})
+				.catch(error => {
+					console.log("Error",error);
+					document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+				})
+
+	}
+
+</script>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/public/css/base.css"/>
+{% endblock %}

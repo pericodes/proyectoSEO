@@ -1,0 +1,67 @@
+{% set link = "https://www.amazon.es/dp/"~productId~"?tag="~affiliateTag  %}
+{% set commentsLink = "https://www.amazon.es/product-reviews/"~productId~"?tag="~affiliateTag  %}
+<article class="amazonSingleProduct card container">
+    <div class="card-body">
+        {% if offert %}
+        <span class="amazonSingleProduct-offert">Oferta</span>
+        {% elseif der %}
+        {% else %}
+        <span class="amazonSingleProduct-sale">Se vende</span>
+        {% endif %}
+        <section class=" amazonSingleProduct- main {% if description > 0 %}row{% endif %}">
+            {% if image %}
+            <section class="amazonSingleProduct-thumbail {% if description > 0 %}col-sm-3{% endif %}">
+                
+                <a href="{{link}}" title="{{title}}" rel="nofollow noopener" target="_blank">
+                    <img class="img-thumbnail lazyload" data-src="{{image}}" alt="{{title}}">
+                </a>
+                {% if commentNumber  %}
+                <div class="aawp-product__rating">
+                    <a class="aawp-star-rating aawp-star-rating--small aawp-star-rating--v1" href="{{commentsLink}}" title="Ver comentarios en Amazon" rel="nofollow noopener" target="_blank">
+                        <span style="width: 90%;"></span>
+                    </a>
+                    <div class="aawp-product__reviews">{{commentNumber}} Comentarios</div>
+                </div>
+                {% endif %}
+            </section>
+            
+        
+            <section class="amazonSingleProduct-content {% if description > 0 %}col-sm-9{% endif %}">
+            {% endif %}
+                <a href="{{link}}" title="{{title}}" rel="nofollow noopener" target="_blank"><h3>{{title}}</h3></a>
+                {% if description > 0 %}
+                <div class="amazonSingleProduct-description">
+                    <ul >
+                        {% for d in description %}
+                            <li>{{ d }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </section>
+        </section>
+        <footer class="amazonSingleProduct-footer container">
+            {% if price %}
+            <section class="amazonSingleProduct-prices container card-body">
+                <section>
+                    {% if originalPrice %}
+                    <span title="Precio Anterior" class="amazonSingleProduct-originalPrice">{{originalPrice}}€</span>
+                    {% if save %}
+                    <span title="Te ahorras" class="amazonSingleProduct-save">−{{save}}€</span>
+                    {% endif %}
+                    {% endif %}
+                    <span title="Precio" class="amazonSingleProduct-price">{{price}}€</span>
+                    <a class="amazonPrimeIcon" href="{{link}}" title="Amazon Prime" rel="nofollow noopener" target="_blank"></a>
+                </section>
+            </section>
+            {% endif %}
+            <section class="container" class="amazonSingleProduct-buyOnAmazonButtom">
+                <a class="buttonIcon amazonButtom amazonIcon" href="{{link}}" title="Comprar en Amazon" target="_blank" rel="nofollow noopener">Comprar en Amazon</a>
+                <!--<span class="amazonSingleProduct-puchaseInfo">IVA incluido.</span>-->
+            </section>
+        </footer>
+    </div>
+    {% if price and date %}
+    <p class="disclaimer">Ultima actualización: <time {% if dateTime %}datetime="{{datetime}}"{% endif %}>{{date}}</time></p>
+    {% endif %}
+</article>

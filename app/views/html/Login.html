@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block main %}
+<form class="card-body" id="loginForm" method="POST" >
+  {% if not userLoged %}
+    <div class="form-group">
+      <label for="user">Usuario: </label>
+      <input type="text" class="form-control" id="user" name="user" aria-describedby="userHelp" placeholder="Escribe tu usuario">
+      <small id="userHelp" class="form-text text-muted">No compartas tu usuario con nadie.</small>
+    </div>
+    <div class="form-group">
+      <label for="pass">Contraseña</label>
+      <input type="password" class="form-control" id="pass" name="pass" placeholder="Contraseña">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="saveData">
+      <label class="form-check-label" for="saveData">Guardar mis datos</label>
+    </div>
+    <div class="form-group" id="loginError" style="display: none;">
+        <div class="alert alert-danger" role="alert">
+            Usuaio y/o contraseña incorrectos.
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary" name="action" value="login">Entrar</button>
+    </div>
+    {% else %}
+      
+      <script>localStorage.removeItem('loginError');</script>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-danger" name="action" value="logout">Desconectar</button>
+      </div>
+
+    {% endif %}
+  </form>
+  <script>
+      if(localStorage.getItem('loginError') == "true"){
+        document.getElementById("loginError").style.display = "block";
+      }else{
+        document.getElementById("loginError").style.display = "none";
+      }
+      document.getElementById("loginForm").addEventListener('submit', function(e) {
+      
+        //e.preventDefault();
+
+      });
+  </script>
+  
+{% endblock %}

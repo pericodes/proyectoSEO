@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: localhost/comprarmovilnuevo.es/sitemap.xml.gz

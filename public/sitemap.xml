@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator-class="Icamys\SitemapGenerator\SitemapGenerator" -->
+<!-- generator-version="2.0.0" -->
+<!-- generated-on="2020-02-14T09:44:22+00:00" -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>www.comprarmovilnuevo.es.test/</loc>
+    <lastmod>2020-02-14T09:44:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>www.comprarmovilnuevo.es.test/public/feed</loc>
+    <lastmod>2020-02-14T09:44:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>www.comprarmovilnuevo.es.test/el-hotel-mejora-al-verlo-en-persona-respecto-a-las-fotos-3</loc>
+    <lastmod>2020-02-14T09:44:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>www.comprarmovilnuevo.es.test/el-hotel-mejora-al-verlo-en-persona-respecto-a-las-fotos-3</loc>
+    <lastmod>2020-02-14T09:44:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>www.comprarmovilnuevo.es.test/el-hotel-mejora-al-verlo-en-persona-respecto-a-las-fotos-</loc>
+    <lastmod>2020-02-14T09:44:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>www.comprarmovilnuevo.es.test/comprar-samsung-galaxy-s10-en-oferta</loc>
+    <lastmod>2020-02-14T09:44:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

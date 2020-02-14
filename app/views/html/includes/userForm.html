@@ -1,0 +1,33 @@
+<div>
+    <h5 class="card-title">${title}</h5>
+    <div class="form-group row">
+        <label for="user" class="col-sm-2 col-form-label">User</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="user" name="user" placeholder="Introduce el nuevo usuario" value="${user.user}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="pass" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-5">
+          <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+        </div>
+        <div class="col-sm-5">
+            <input type="password" class="form-control" id="passRepeted" placeholder="Vuelve a introducir la contraseña">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="role">Role:</label>
+        <div class="col-sm-10">
+            <select id="role" class="form-control">
+                <option selected value="normalUser">Usuario Normal</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="amazonAffiliateTag" class="col-sm-2 col-form-label">AmazonTag</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="amazonAffiliateTag" name="amazonAffiliateTag" value="${user.amazonAffiliateTag}">
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="addOrUpdateUser('${user.id}', this)">${title}</button>
+</div>

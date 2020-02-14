@@ -1,0 +1,109 @@
+.amazonSingleProduct{
+    margin-bottom: 20px;
+}
+
+.amazonSingleProduct-thumbail img{
+    max-height: 15rem;
+}
+.amazonSingleProduct-prices > section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.amazonSingleProduct-prices{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.amazonSingleProduct-footer{
+    width: fit-content;
+    float: right;
+}
+.amazonSingleProduct-prices span, .amazonSingleProduct-prices a{
+    margin-left: 1rem;
+    box-sizing: unset;
+    margin-top: 0.5rem;
+}
+.amazonSingleProduct-price{
+    font-size: 1.5rem;
+
+}
+.amazonSingleProduct-save{
+    background: #3CB371;
+    color: #E0FFFF;
+    padding: 0.3rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.amazonSingleProduct-originalPrice{
+    background: #CD5C5C;
+    color: #E0FFFF;
+    padding: 0.3rem;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.amazonSingleProduct-sale, .amazonSingleProduct-offert{
+    color: #fff;
+    top: -1px;
+    right: -1px;
+    position: absolute;
+    padding: 0 15px;
+}
+.amazonSingleProduct-sale, .amazonSingleProduct-offert{
+    background: #27ae60;
+}
+.amazonSingleProduct-offert{
+    background: #DC143C;
+}
+.buttonIcon{
+    position: relative;
+    padding-left: 32px !important;
+}
+.buttonIcon::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 9px center;
+}
+.amazonButtom{
+    border-color: #9c7e31 #90742d #786025 !important;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0,0,0,0);
+    color: #111 !important;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 12px 6px 12px;
+    border: 1px solid transparent !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.amazonIcon::before{
+    background-image: url(/public/images/ico/icon-amazon-black.svg);
+}
+.amazonPrimeIcon{
+    background-image: url(/public/images/ico/icon-check-prime.png);
+    display: inline-block;
+    width: 55px;
+    height: 16px;
+    vertical-align: middle;
+}
+.amazonSingleProduct-buyOnAmazonButtom{
+    display: flex;
+    justify-content: center;
+}

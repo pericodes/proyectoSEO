@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="container card-body">
+    <section id="addUser" class="card card-body">
+    </section>
+    <section id="userList" class="card card-body">
+        <h5 class="card-title">Lista de usuarios</h5>
+        <section id="users" class="card card-body">
+        </section>
+    </section>
+</section>
+<div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+    <!-- Position it -->
+    <div style="margin: 3rem;position: fixed;/* top: 0; */right: 0;bottom: 0;min-width: 15rem;" id="notifications">
+      <!-- Then put toasts within -->
+    </div>
+</div>
+<div class="modal fade" id="updateUserModal" tabindex="-1" role="dialog" aria-labelledby="updateUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content card-body">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateUserModalLabel">Modificar Usuario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <section class="modal-body" id="updateUserModalContent"></section>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+</div>
+<script>
+    class User {
+        constructor(id, user, amazonAffiliateTag, role) {
+            this.id = id;
+            this.user = user;
+            this.amazonAffiliateTag = amazonAffiliateTag;
+            this.role = role;
+        }
+	}
+	var users = [];
+
+
+	{% for user in users %}
+	users.push(new User("{{user['_id']}}", "{{user['user']}}", "{{user['amazonAffiliateTag']}}", "{{user['role']}}"));
+	{% endfor%}
+
+	createTable();
+
+    generateFormUser("#addUser", "Añadir usuario", new User("", "", "", ""));
+
+    function generateFormUser(selector, title, user) {
+        let html = `{% include includes["userForm"] %}`;
+
+        document.querySelector(selector).insertAdjacentHTML("afterbegin", html);
+    }
+
+    function addNotification(title, content) {
+        randomId = Math.round(Math.random() * 100000);
+        let html = `<div class="toast" id="${randomId}" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2500">
+        <div class="toast-header">
+          <!--<img src="..." class="rounded mr-2" alt="...">-->
+          <strong class="mr-auto">${title}</strong>
+          <!--<small class="text-muted">just now</small>-->
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          ${content}
+        </div>
+      </div>`;
+
+      document.getElementById("notifications").insertAdjacentHTML("beforeend", html);
+      $(`#${randomId}`).toast('show');
+    }
+    var updateUserModalContentSelector = "#updateUserModalContent"; 
+    function updateUser(id, element) {
+        let user = null; 
+        let newUsers = [];
+        for (const userAux of users) {
+             if(userAux.id === id){
+                user = userAux; 
+            }else{
+                newUsers.push(userAux);
+            }
+        }
+        users = newUsers; 
+        if(document.querySelector(updateUserModalContentSelector).childNodes.length > 0){
+            document.querySelector(updateUserModalContentSelector).removeChild(document.querySelector(updateUserModalContentSelector).childNodes[0]);
+        }
+        generateFormUser(updateUserModalContentSelector, "Modificar Usuario", user);
+
+        $('#updateUserModal').modal("show");
+
+
+    }
+
+    function deleteUser(id, element) {
+
+        let formData = new FormData();
+		formData.append("id", id);
+		formData.append("action", "deleteUser");
+
+        fetch(window.location.href , {
+				  method: 'POST', // or 'PUT'
+				  body: formData, // data can be `string` or {object}!
+				}).then(res => {
+					if(res.ok){
+						res.text().then(text => {
+                            console.log(text);
+							let result = JSON.parse(text);
+							if(result){
+								//alert("Usuario eliminado correctamente.")
+                                element.closest("tbody").removeChild(element.closest("tr"));
+                                let newUsers = []
+                                for (const user of users) {
+                                    if(user.id != id){
+                                        newUsers.push(user);
+                                    }
+                                }
+                                users = newUsers;
+                                createTable();
+                                addNotification("Usuario Eliminado", "El usuario se ha eliminado correctamente.");
+                                
+                                //$(".toast").toast('show');
+
+							}else{
+								alert("Error: El usuario no se ha podido eliminar.")
+							}
+						}).catch(err => {
+							console.log("Error",err);
+							//document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+						}); 
+					}
+				}).catch(error => {
+					console.log("Error",error);
+					//document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+				});
+
+
+
+    }
+    function addOrUpdateUser(id, element) {
+        
+        let form = element.closest("section").querySelectorAll("input, select");
+        user = form[0].value;
+        if(/[^\w]/.test(user)){
+            alert("El usuario sólo puede tener números y letras")
+            return;
+        }
+        if(form[1].value !== form[2].value){
+            alert("Las contraseñas no coinciden")
+            return;
+        }else{
+            let pass = form[1].value;
+        }
+        let role = form[3].value;
+        let amazonAffiliateTag = form[4].value;
+        
+        let formData = new FormData();
+		formData.append("id", id);
+		formData.append("user", user);
+		formData.append("pass", pass);
+		formData.append("role", role);
+		formData.append("amazonAffiliateTag", amazonAffiliateTag);
+		formData.append("action", "addOrUpdateUser");
+		console.log(element);
+		
+		fetch(window.location.href , {
+				  method: 'POST', // or 'PUT'
+				  body: formData, // data can be `string` or {object}!
+				}).then(res => {
+					if(res.ok){
+						res.text().then(text => {
+                            console.log(text);
+							let idUser = JSON.parse(text);
+                            console.log(idUser);
+
+                            if(!id){
+                                if(idUser.length === 24){
+                                    addNotification("Usuario Creado", "El usuario se ha creado correctamente.");
+                                    for (const input of element.closest("section").querySelectorAll("input")) {
+                                        input.value = "";
+                                    }
+                                    users.push(new User(idUser, user, pass, role)); 
+                                    createTable();
+                                }else{
+								    alert("Error: El usuario no se ha podido crear.")
+                                }
+                            }else{
+                                if(idUser === true){
+                                    addNotification("Usuario Modificado", "El usuario se ha modificado correctamente.");
+                                    users.push(new User(id, user, pass, role)); 
+                                    createTable();
+                                    $('#updateUserModal').modal("hide");
+                                }else{
+								    alert("Error: El usuario no se ha podido modificar.")
+                                }
+                            }
+						}).catch(err => {
+							console.log("Error",err);
+							//document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+						}); 
+					}
+				}).catch(error => {
+					console.log("Error",error);
+					//document.getElementById("posts").insertAdjacentHTML("afterbegin", `<p>Hubo algún problema con la búsqueda. Inténtalo de nuevo</p>`);
+				});
+
+    }
+    function createTable() {
+
+    document.getElementById("users").removeChild(document.getElementById("users").childNodes[0]);
+    if (users.length > 0) {
+        let html = `<table class="table table-sm table-hover table-striped">
+        <thead>
+        <tr>
+            <th scope="col" style="width: 50%;">Nombre de usuario</th>
+            <td style="width: 20%; text-align: center;">Tipo de usuario</td>
+            <td style="width: 15%; text-align: center;">Editar</td>
+            <td style="width: 15%; text-align: center;">Eliminar</td>
+        </tr>
+        </thead>
+        <tbody>`;
+        users.forEach(user => {
+            html += `<tr>
+                <th scope="row">${user.user}</th>
+                <td style="text-align: center;">${user.role}</td>
+                <td><button type="button" class="btn btn-warning" onclick="updateUser('${user.id}', this)" style="display: block; margin-left: auto; margin-right: auto;">Editar</button></td>
+                <td><button type="button" class="btn btn-danger" onclick="deleteUser('${user.id}', this)" style="display: block; margin-left: auto; margin-right: auto;">Eliminar</button></td>
+            </tr>`;
+        });
+        html += `</tbody></table>`;
+
+        document.getElementById("users").insertAdjacentHTML("afterbegin", html);
+    }else{
+        document.getElementById("users").insertAdjacentHTML("afterbegin", `<p>No se encontraron posts</p>`);
+    }
+
+    }
+</script>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/public/css/base.css"/>
+{% endblock %}

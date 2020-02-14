@@ -1,0 +1,54 @@
+<article class="product card card-body smartphone-article">
+    <section class="form-group">
+        <label for="title">Título</label>
+        <input required="" type="text" class="form-control" id="title"  name="title" placeholder="El titulo se intentará rellenar solo: Samsung Galaxy s10 64gb 4gb de ram">
+    </section>
+    <section class="form-group">
+        <label for="marca">Marca</label>
+        <input required="" type="text" class="form-control" id="marca"  name="marca" placeholder="Samsung" >
+    </section>
+    <section class="form-group">
+        <label for="modelo">Modelo</label>
+        <input required="" type="text" class="form-control" id="modelo"  name="modelo" placeholder="Galaxy s10" >
+    </section>
+    <section class="form-group">
+        <label for="procesador">Procesador</label>
+        <input required="" type="text" class="form-control" id="procesador"  name="procesador" placeholder="Snapdragron 810" >
+    </section>
+    <section class="form-group">
+        <label for="memoriaRam">Memoria RAM (GB)</label>
+        <input required="" type="number" class="form-control" id="memoriaRam"  name="memoriaRam" placeholder="3GB">
+    </section>
+    <section class="form-group">
+        <label for="almacenamiento">Alamacenamiento (GB)</label>
+        <input required="" type="number" class="form-control" id="almacenamiento"  name="almacenamiento" placeholder="3GB">
+    </section>
+    <section class="form-group">
+        <label for="pantalla">Pantalla</label>
+        <input required="" type="text" class="form-control" id="pantalla"  name="pantalla" placeholder="AMOLED 6,47 pulgadas con notch">
+    </section>
+    <section class="form-group">
+        <label for="dimensiones">Diemsiones</label>
+        <input required="" type="text" class="form-control" id="dimensiones"  name="dimensiones" placeholder="AMOLED 6,47 pulgadas con notch">
+    </section>
+    <section class="form-group">
+        <label for="bateria">Batería</label>
+        <input required="" type="text" class="form-control" id="bateria"  name="bateria" placeholder="3.800mA">
+    </section>
+    <section class="form-group">
+        <label for="sistemaOperativo">SistemaOperativo</label>
+        <input required="" type="text" class="form-control" id="sistemaOperativo"  name="sistemaOperativo" placeholder="Android 9">
+    </section>
+    <section class="form-group">
+        <label for="amazonLink">Amazon</label>
+        <input required="" type="url" class="form-control" id="amazonLink"  name="amazonLink">
+    </section>
+    <div class="form-group">
+        <button type="button" class="btn btn-danger" id="removeProduct" onclick="removeProductt(this)" style="display: none;">Borrar variante</button>
+    </div>
+</article>
+<div id="buttons" class="card-body row">
+    <div class="col-md-2">
+        <button type="button" class="btn btn-success" onclick="addProduct()">Añadir variante</button>
+    </div>
+</div>

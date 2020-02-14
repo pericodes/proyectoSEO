@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- metaTags -->
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Test</title>
+	<meta name="description" content="Test"/>
+	<link rel="canonical" href="/test"/>
+	<meta name="url" content="/test"/>
+	<link rel="index" title="Comprar Movil Nuevo" href="/http://www.comprarmovilnuevo.es.test/"/>
+	<link rel="alternate" type="application/rss+xml" title="Comprar Movil Nuevo: Feed" href="/public/feed.xml"/>
+    <link rel="shortcut icon" href="/public/images/ico/logo.ico" />
+    <link rel="icon" href="/public/images/ico/logo.ico" sizes="32x32" />
+    <link rel="icon" href="/public/images/ico/logo.ico" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/public/images/ico/logo.ico" />
+	<meta name="msapplication-TileImage" content="Comprar Movil Nuevo" />
+	<link rel="image_src" href="//public/images/webp/Google_400.webp">
+	<meta name="date" content="Sunday, February 09, 2020, 7:25 pm"/>
+	<meta name="keywords" content="comprar,En oferta,chollo,ganga,rebajado,mejor precio,lorem ipsum dolor sit amet consectetur adipiscing elit cras pretium mattis dui ut mattis morbi nec tincidunt massa donec nec metus vel justo gravida tincidunt duis vel semper nulla in finibus,in ut venenatis sem donec vulputate enim nisl id mattis tortor hendrerit eu sed et fringilla enim nam porttitor velit eros suspendisse congue lorem vitae lacus convallis vulputate vestibulum dignissim metus luctus odio iaculis rutrum duis sem nisl faucibus eu leo at vulputate auctor diam pellentesque nibh odio consectetur vel bibendum,placerat cursus dolorcras vitae augue rhoncus rhoncus diam quis placerat nibh integer suscipit luctus risus,auctor donec tincidunt neque sit amet gravida vestibulum quam,suscipit turpis et volutpat nisl sem in dui pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas quisque at cursus lorem integer auctor dui et finibus mollis magna nibh accumsan augue eget auctor lorem lectus ornare metus praesent sollicitudin ipsum nec nisl faucibus consequat maecenas ultricies tellus lacus et viverra,placerat nec morbi ac nisi placerat vestibulum diam tristique tincidunt,quisque sagittis orci vel accumsan consequat nulla ac commodo ligula consequat rutrum nulla aenean velit eros ultrices sed egestas id molestie eget dolor nunc finibus nisl id metus hendrerit in interdum,malesuada nunc,nulla lacus vivamus eleifend condimentum volutpataliquam gravida vestibulum vehicula curabitur efficitur auctor sollicitudin nullam finibus in ipsum rutrum sodales vivamus est orci elementum non convallis quis fermentum sed libero donec non dignissim diam in,pharetra dui ac faucibus lectus sed quam orci sollicitudin eget magna vel rutrum ultrices lorem aliquam venenatis tempor congue proin volutpat arcu nec augue malesuada,varius orci pharetra donec lectus purus cursus vulputate egestas dapibus eleifend at,vivamus rutrum magna,vel porttitor ligula semper quismauris suscipit libero imperdiet ullamcorper malesuada neque orci commodo nisl,porttitor arcu dui,nibh nulla facilisi ut pharetra tortor dolor sed tincidunt turpis malesuada vitae quisque eleifend viverra porta integer eu metus turpis vivamus auctor odio et pretium posuere in id congue felis maecenas quis ipsum sit amet turpis lobortis rhoncus duis sagittis vulputate libero in pulvinar nisl fringilla pulvinar mauris gravida,iaculis tempor ultricies dui nibh sollicitudin odio,accumsan augue turpis at leo curabitur in aliquet ligula in sollicitudin vitae nisi non dictum sed varius nunc vel scelerisque euismod diam leo semper dui sit amet vehicula,felis eget dui sed imperdiet eros elit non suscipit eros iaculis consectetur ut malesuada odio sit amet enim vehicula dictumnulla maximus ullamcorper dui finibus consectetur ut sapien felis faucibus ut lorem vel rutrum condimentum neque suspendisse gravida eleifend justo eleifend hendrerit in sed accumsan diam sed scelerisque lectus ipsum vitae euismod metus pretium vel cras,risus in lacus finibus fermentum vitae sit amet eros donec scelerisque ornare pellentesque vivamus sit amet lacus molestie interdum tellus sed rhoncus dolor fusce orci magna feugiat ut augue vel interdum vulputate metus cras,dui nisl ut malesuada dui felis in ultrices leo rhoncus tempus nullam finibus tempor arcu et maximus donec ultricies posuere tellus et vestibulum orci egestas ut" />
+	<meta property="og:title" content="Test"/>
+	<meta property="og:description" content="Test"/>
+	<meta property="og:locale" content="es_ES"/>
+	<meta property="og:url" content="/test"/>
+	<meta property="og:site_name" content="Comprar Movil Nuevo"/>
+    <meta property="og:image" content="//public/images/webp/Google_400.webp" />
+    <meta property="og:image:secure_url" content="//public/images/webp/Google_400.webp" />
+	<meta property="og:type" content="article"/>
+	<meta property="og:article:published_time" content="2020-02-09T19:25:36+00:00"/>
+	<meta name="twitter:title" content="Test"/>
+	<meta name="twitter:description" content="Test"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="//public/images/webp/Google_400.webp" />
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="public/css/base.css"/>
+            <!--<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	-->
+	<style type="text/css">
+#mainPhoto img, #postDescription img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Generic Project</h1>
+		</div>
+		<section id="menu" class="d-flex justify-content-center bg-dark">
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark container">
+			  <a class="navbar-brand" href="./">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			    <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Delete my account</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>    
+			    </ul>
+			  </div>  
+			</nav>
+		</section>
+	</header>
+	<div class="container d-flex justify-content-center">
+		<main class="card">
+			<div class="card-body">
+<section id="post" class="border-bottom pb-3 container">
+    <header class="">
+        <section id="mainPhoto">
+            <figure>
+    <source type="image/webp" srcset="/public/images/webp/Google_100.webp 100w, /public/images/webp/Google_200.webp 200w, /public/images/webp/Google_400.webp 400w, /public/images/webp/Google_800.webp 800w, /public/images/webp/Google_1000.webp 1000w, /public/images/webp/Google_1400.webp 1400w, /public/images/webp/Google_1800.webp 1800w">
+    <img src="/public/images/original/Google.png" alt="Google">
+</figure>
+        </section>
+        <section id="postTitle">
+            <h1>Test</h1>
+        </section>
+    </header>
+
+    <section id="postDescription">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium mattis dui ut mattis. Morbi nec tincidunt massa. Donec nec metus vel justo gravida tincidunt. Duis vel semper nulla, in finibus ante. In ut venenatis sem. Donec vulputate enim nisl, id mattis tortor hendrerit eu. Sed et fringilla enim. Nam porttitor velit eros. Suspendisse congue lorem vitae lacus convallis vulputate. Vestibulum dignissim metus luctus odio iaculis rutrum. Duis sem nisl, faucibus eu leo at, vulputate auctor diam. Pellentesque nibh odio, consectetur vel bibendum a, placerat cursus dolor.</p><p>Cras vitae augue rhoncus, rhoncus diam quis, placerat nibh. Integer suscipit luctus risus a auctor. Donec tincidunt, neque sit amet gravida vestibulum, quam ante suscipit turpis, et volutpat nisl sem in dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque at cursus lorem. Integer auctor, dui et finibus mollis, magna nibh accumsan augue, eget auctor lorem lectus ornare metus. Praesent sollicitudin ipsum nec nisl faucibus consequat. Maecenas ultricies tellus lacus, et viverra mi placerat nec. Morbi ac nisi placerat, vestibulum diam tristique, tincidunt ex. Quisque sagittis orci vel accumsan consequat. Nulla ac commodo ligula, consequat rutrum nulla. Aenean velit eros, ultrices sed egestas id, molestie eget dolor. Nunc finibus nisl id metus hendrerit, in interdum ex malesuada. Nunc a nulla lacus. Vivamus eleifend condimentum volutpat.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" src="5e405bc8b00d6" sizes="50vw" srcset="/public/images/webp/perro-raro_100.webp 100w, /public/images/webp/perro-raro_200.webp 200w, /public/images/webp/perro-raro_400.webp 400w, /public/images/webp/perro-raro_584.webp 584w" alt="Perro" data-mce-src="5e405bc8b00d6" data-mce-style="display: block; margin-left: auto; margin-right: auto;"></p><p>Aliquam gravida vestibulum vehicula. Curabitur efficitur auctor sollicitudin. Nullam finibus in ipsum rutrum sodales. Vivamus est orci, elementum non convallis quis, fermentum sed libero. Donec non dignissim diam. In a pharetra dui, ac faucibus lectus. Sed quam orci, sollicitudin eget magna vel, rutrum ultrices lorem. Aliquam venenatis tempor congue. Proin volutpat arcu nec augue malesuada, a varius orci pharetra. Donec lectus purus, cursus vulputate egestas dapibus, eleifend at ante. Vivamus rutrum magna ex, vel porttitor ligula semper quis.</p><p>Mauris suscipit, libero imperdiet ullamcorper malesuada, neque orci commodo nisl, a porttitor arcu dui a nibh. Nulla facilisi. Ut pharetra tortor dolor, sed tincidunt turpis malesuada vitae. Quisque eleifend viverra porta. Integer eu metus turpis. Vivamus auctor odio et pretium posuere. In id congue felis. Maecenas quis ipsum sit amet turpis lobortis rhoncus. Duis sagittis vulputate libero, in pulvinar nisl fringilla pulvinar. Mauris gravida, mi iaculis tempor ultricies, dui nibh sollicitudin odio, a accumsan augue turpis at leo. Curabitur in aliquet ligula. In sollicitudin vitae nisi non dictum. Sed varius, nunc vel scelerisque euismod, diam leo semper dui, sit amet vehicula ante felis eget dui. Sed imperdiet eros elit, non suscipit eros iaculis consectetur. Ut malesuada odio sit amet enim vehicula dictum.</p><p>Nulla maximus ullamcorper dui finibus consectetur. Ut sapien felis, faucibus ut lorem vel, rutrum condimentum neque. Suspendisse gravida eleifend justo eleifend hendrerit. In sed accumsan diam. Sed scelerisque lectus ipsum, vitae euismod metus pretium vel. Cras a risus in lacus finibus fermentum vitae sit amet eros. Donec scelerisque ornare pellentesque. Vivamus sit amet lacus molestie, interdum tellus sed, rhoncus dolor. Fusce orci magna, feugiat ut augue vel, interdum vulputate metus. Cras a dui nisl. Ut malesuada dui felis, in ultrices leo rhoncus tempus. Nullam finibus tempor arcu et maximus. Donec ultricies posuere tellus, et vestibulum orci egestas ut.</p>
+    </section>
+    <section id="products">
+        
+    </section>
+
+    <article class="amazonSingleProduct card container">
+    <div class="card-body">
+                <span class="amazonSingleProduct-offert">Oferta</span>
+                <section class=" amazonSingleProduct- main row">
+                        <section class="amazonSingleProduct-thumbail col-sm-3">
+                
+                <a href="https://www.amazon.es/dp/#?tag=#" title="Producto 1: fadsfasd" rel="nofollow noopener" target="_blank">
+                    <img class="img-thumbnail" src="https://m.media-amazon.com/images/I/31vtVo4NJ3L.jpg" alt="Producto 1: fadsfasd">
+                </a>
+                            </section>
+            
+        
+            <section class="amazonSingleProduct-content col-sm-9">
+                            <a href="https://www.amazon.es/dp/#?tag=#" title="Producto 1: fadsfasd" rel="nofollow noopener" target="_blank"><h3>Producto 1: fadsfasd</h3></a>
+                                <div class="amazonSingleProduct-description">
+                    <ul >
+                                                    <li>sdfdasfddsfgsdfgsdfgsdfgdfsgsdfgdfsgdsfgsdfgdfsgsdgdfsgsdfgdfsgsdfgsdfgsdfgdfsgsdfgsdfgsdfgsdfgsgsdfsdfgsdfgsdffgsdfsdfgsdgsgsdfgsdfgsdfgas</li>
+                                                    <li>dsfadsads</li>
+                                                    <li>fdsfdsfa</li>
+                                            </ul>
+                </div>
+                            </section>
+        </section>
+        <footer class="amazonSingleProduct-footer container">
+                        <section class="amazonSingleProduct-prices container card-body">
+                                <span title="Precio Anterior" class="amazonSingleProduct-originalPrice">50.00€</span>
+                                <span title="Te ahorras" class="amazonSingleProduct-save">−5.00€</span>
+                                                <span title="Precio" class="amazonSingleProduct-price">45.00€</span>
+                <a class="amazonPrimeIcon" href="https://www.amazon.es/dp/#?tag=#" title="Amazon Prime" rel="nofollow noopener" target="_blank"></a>
+            </section>
+                        <section class="container">
+                <a class="buttonIcon amazonButtom amazonIcon" href="https://www.amazon.es/dp/#?tag=#" title="Comprar en Amazon" target="_blank" rel="nofollow noopener">Comprar en Amazon</a>
+                <!--<span class="amazonSingleProduct-puchaseInfo">IVA incluido.</span>-->
+            </section>
+        </footer>
+    </div>
+        <p class="disclaimer">Ultima actualización: <time >30/01/2020</time></p>
+    </article>
+
+<style>
+.amazonSingleProduct-thumbail img{
+    max-height: 15rem;
+}
+.amazonSingleProduct {
+    width: fit-content;
+    max-width: 100%;
+}
+.amazonSingleProduct-prices{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.amazonSingleProduct-footer{
+    width: fit-content;
+    float: right;
+}
+.amazonSingleProduct-prices span, .amazonSingleProduct-prices a{
+    margin-left: 1rem;
+    box-sizing: unset;
+    margin-top: 0.5rem;
+}
+.amazonSingleProduct-price{
+    font-size: 1.5rem;
+
+}
+.amazonSingleProduct-save{
+    background: #3CB371;
+    color: #E0FFFF;
+    padding: 0.3rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.amazonSingleProduct-originalPrice{
+    background: #CD5C5C;
+    color: #E0FFFF;
+    padding: 0.3rem;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.amazonSingleProduct-sale, .amazonSingleProduct-offert{
+    color: #fff;
+    top: -1px;
+    right: -1px;
+    position: absolute;
+    padding: 0 15px;
+}
+.amazonSingleProduct-sale, .amazonSingleProduct-offert{
+    background: #27ae60;
+}
+.amazonSingleProduct-offert{
+    background: #DC143C;
+}
+.buttonIcon{
+    position: relative;
+    padding-left: 32px !important;
+}
+.buttonIcon::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 9px center;
+}
+.amazonButtom{
+    border-color: #9c7e31 #90742d #786025 !important;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0,0,0,0);
+    color: #111 !important;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 12px 6px 12px;
+    border: 1px solid transparent !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.amazonIcon::before{
+    background-image: url(/public/images/ico/icon-amazon-black.svg);
+}
+.amazonPrimeIcon{
+    background-image: url(/public/images/ico/icon-check-prime.png);
+    display: inline-block;
+    width: 55px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+</style>
+    <article class="amazonSingleProduct card container">
+    <div class="card-body">
+                <span class="amazonSingleProduct-offert">Oferta</span>
+                <section class=" amazonSingleProduct- main row">
+                        <section class="amazonSingleProduct-thumbail col-sm-3">
+                
+                <a href="https://www.amazon.es/dp/#?tag=#" title="Producto 2: afdsfa" rel="nofollow noopener" target="_blank">
+                    <img class="img-thumbnail" src="https://m.media-amazon.com/images/I/31vtVo4NJ3L.jpg" alt="Producto 2: afdsfa">
+                </a>
+                            </section>
+            
+        
+            <section class="amazonSingleProduct-content col-sm-9">
+                            <a href="https://www.amazon.es/dp/#?tag=#" title="Producto 2: afdsfa" rel="nofollow noopener" target="_blank"><h3>Producto 2: afdsfa</h3></a>
+                                <div class="amazonSingleProduct-description">
+                    <ul >
+                                                    <li>sdfdasfddsfgsdfgsdfgsdfgdfsgsdfgdfsgdsfgsdfgdfsgsdgdfsgsdfgdfsgsdfgsdfgsdfgdfsgsdfgsdfgsdfgsdfgsgsdfsdfgsdfgsdffgsdfsdfgsdgsgsdfgsdfgsdfgas</li>
+                                                    <li>dsfadsads</li>
+                                                    <li>fdsfdsfa</li>
+                                            </ul>
+                </div>
+                            </section>
+        </section>
+        <footer class="amazonSingleProduct-footer container">
+                        <section class="amazonSingleProduct-prices container card-body">
+                                <span title="Precio Anterior" class="amazonSingleProduct-originalPrice">50.00€</span>
+                                <span title="Te ahorras" class="amazonSingleProduct-save">−6.00€</span>
+                                                <span title="Precio" class="amazonSingleProduct-price">45.00€</span>
+                <a class="amazonPrimeIcon" href="https://www.amazon.es/dp/#?tag=#" title="Amazon Prime" rel="nofollow noopener" target="_blank"></a>
+            </section>
+                        <section class="container">
+                <a class="buttonIcon amazonButtom amazonIcon" href="https://www.amazon.es/dp/#?tag=#" title="Comprar en Amazon" target="_blank" rel="nofollow noopener">Comprar en Amazon</a>
+                <!--<span class="amazonSingleProduct-puchaseInfo">IVA incluido.</span>-->
+            </section>
+        </footer>
+    </div>
+        <p class="disclaimer">Ultima actualización: <time >30/01/2020</time></p>
+    </article>
+
+<style>
+.amazonSingleProduct-thumbail img{
+    max-height: 15rem;
+}
+.amazonSingleProduct {
+    width: fit-content;
+    max-width: 100%;
+}
+.amazonSingleProduct-prices{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.amazonSingleProduct-footer{
+    width: fit-content;
+    float: right;
+}
+.amazonSingleProduct-prices span, .amazonSingleProduct-prices a{
+    margin-left: 1rem;
+    box-sizing: unset;
+    margin-top: 0.5rem;
+}
+.amazonSingleProduct-price{
+    font-size: 1.5rem;
+
+}
+.amazonSingleProduct-save{
+    background: #3CB371;
+    color: #E0FFFF;
+    padding: 0.3rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.amazonSingleProduct-originalPrice{
+    background: #CD5C5C;
+    color: #E0FFFF;
+    padding: 0.3rem;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.amazonSingleProduct-sale, .amazonSingleProduct-offert{
+    color: #fff;
+    top: -1px;
+    right: -1px;
+    position: absolute;
+    padding: 0 15px;
+}
+.amazonSingleProduct-sale, .amazonSingleProduct-offert{
+    background: #27ae60;
+}
+.amazonSingleProduct-offert{
+    background: #DC143C;
+}
+.buttonIcon{
+    position: relative;
+    padding-left: 32px !important;
+}
+.buttonIcon::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 9px center;
+}
+.amazonButtom{
+    border-color: #9c7e31 #90742d #786025 !important;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0,0,0,0);
+    color: #111 !important;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 12px 6px 12px;
+    border: 1px solid transparent !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.amazonIcon::before{
+    background-image: url(/public/images/ico/icon-amazon-black.svg);
+}
+.amazonPrimeIcon{
+    background-image: url(/public/images/ico/icon-check-prime.png);
+    display: inline-block;
+    width: 55px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+</style>
+    <footer>
+        
+    </footer>
+    <section id="opinions" class="card card-body">
+        <section >
+
+        </section>
+        <section id="comments">
+            <h3>Añade tu cometario:</h3>
+            <form id="addComment" action="addComment" method="POST">
+                <section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentName">Nombre </label>
+    <input required="" type="text" class="form-control col-sm-10" id="comentName"  name="comentName">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentTitle">Título</label>
+    <input required="" type="text" class="form-control col-sm-10" id="ComentTitle"  name="ComentTitle">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentComent">Comentario</label>
+    <textarea required="" class="form-control col-sm-10" id="comentComent"  name="comentComent" rows="3"></textarea>
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentValoration">Valoración</label>
+            <select class="custom-select col-sm-10" id="comentValoration">
+            <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</section>                <section class="form-group mt-4 text-center">
+                    <input name="submit" type="submit" id="submit" class="btn btn-primary" value="Publicar comentario">
+                </section>
+            </form>
+        </section>
+        <ul class="product_comments row">
+            <li class="col-lg-12" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <meta itemprop="itemReviewed" content="Hummingbird printed t-shirt" />
+                <div class="row comment">
+                    <div class="comment_header col-md-12">
+                        <div class="star_content clearfix"  itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <meta itemprop="worstRating" content="1" />
+                            <meta itemprop="ratingValue" content="5" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+         
+                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                    </div>
+         
+                    <div class="comment_author_infos col-md-12">
+                        <span>Por</span>
+                        <span itemprop="author" class="author">John Doe</span>
+                        <span>el</span>
+                        <meta itemprop="datePublished" content="2019-04-26" />
+                        <span>26/04/2019</span>
+                    </div>    
+                    <div class="comment_details col-md-12">
+                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-12" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <meta itemprop="itemReviewed" content="Hummingbird printed t-shirt" />
+                <div class="row comment">
+                    <div class="comment_header col-md-12">
+                        <div class="star_content clearfix" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <meta itemprop="worstRating" content="1" />
+                            <meta itemprop="ratingValue" content="3" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+         
+                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                    </div>
+         
+                    <div class="comment_author_infos col-md-12">
+                        <span>Por</span>
+                        <span itemprop="author" class="author">Benny Hill</span>
+                        <span>el</span>
+                        <meta itemprop="datePublished" content="2019-03-15" />
+                        <span>15/03/2019</span>
+                    </div>    
+                    <div class="comment_details col-md-12">
+                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                    </div>
+                </div>
+            </li>
+            <li class="col-lg-12" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <meta itemprop="itemReviewed" content="Hummingbird printed t-shirt" />
+                <div class="row comment">
+                    <div class="comment_header col-md-12">
+                        <div class="star_content clearfix"  itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star star_on"></div>
+                            <div class="star"></div>
+                            <meta itemprop="worstRating" content="1" />
+                            <meta itemprop="ratingValue" content="4" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+         
+                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                    </div>
+         
+                    <div class="comment_author_infos col-md-12">
+                        <span>Por</span>
+                        <span itemprop="author" class="author">Brenda Bullock</span>
+                        <span>el</span>
+                        <meta itemprop="datePublished" content="2019-02-10" />
+                        <span>10/02/2019</span>
+                    </div>    
+                    <div class="comment_details col-md-12">
+                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</section>
+</div>
+		</main>
+		<!--<aside class="col-sm-3 card">
+			<div class="card-body">
+				<section id="generic-login" class="border-bottom  pb-3">
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  <div class="form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</section>
+
+			</div>
+		</aside>-->
+	</div>
+	</body>
+</html>

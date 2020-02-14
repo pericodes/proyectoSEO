@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- metaTags -->
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="robots" content="noindex, nofollow" />
+	<meta name="googlebot" content="noindex, nofollow" />
+
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	    	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="public/css/base.css"/>
+            <!--<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	-->
+	<style type="text/css">
+.MUxGbd {
+    padding-top: 1px;
+    margin-bottom: -1px;
+	font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+	font-size: 14px;
+    line-height: 20px;
+}
+.nCkwMd {
+    box-sizing: border-box;
+    padding-right: 8px;
+}
+.n9USt {
+    flex: 1;
+    max-width: 50%;
+}
+#google-description {
+    max-height: 999999px;
+    display: block;
+}
+.uUPGi {
+    font-size: 14px;
+    line-height: 20px;
+}
+.Hk2yDb, .Hk2yDb span {
+    width: 65px;
+    height: 15px;
+    display: inline-block;
+    background: repeat-x 0 0;
+    background-size: 13px 15px;
+    font-size: 0;
+    line-height: 0;
+}
+.aLF0Z {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.Hk2yDb.KsR1A {
+    background-image: url("data:image/svg+xml,\00003csvg width='13px' height='15px' xmlns='http://www.w3.org/2000/svg'>\00003cpath fill='%23d1d1d1' d='m0,7.6l4.7,0,1.5-4.5,1.5,4.5,4.7,0-3.8,2.8,1.5,4.5-3.8-2.8-3.8,2.8,1.5-4.5'/>\00003c/svg>");
+}
+.Hk2yDb.KsR1A span {
+    background-image: url("data:image/svg+xml,\00003csvg width='13px' height='15px' xmlns='http://www.w3.org/2000/svg'>\00003cpath fill='%23fabb05' d='m0,7.6l4.7,0,1.5-4.5,1.5,4.5,4.7,0-3.8,2.8,1.5,4.5-3.8-2.8-3.8,2.8,1.5-4.5'/>\00003c/svg>");
+}
+.WZ8Tjf {
+    color: #70757A;
+}
+
+
+
+/* Google snippet nahlady */
+.google-title{
+  color: #12C;   font-family: arial, sans-serif;   font-size: 20px;  font-weight: 400;   height: auto;  line-height: 19px;
+  list-style-image: none;   list-style-position: outside;    list-style-type: none;    margin-bottom: 0px;   margin-left: 0px;
+  margin-right: 0px;  margin-top:0px;  padding:0px;   text-align: left;  text-decoration: none;  visibility: visible;
+  width: auto;
+}
+
+.google-url{
+  color: #093;  display: block;   font-family: arial, sans-serif;    font-size: 14px;  font-style: normal;
+  font-weight: normal;   height: auto;  line-height: 16px;   list-style-image: none;   list-style-position: outside;
+  list-style-type: none;    margin:0px;   padding:0px;  text-align: left;   visibility: visible;   max-width: 600px;
+}
+
+.google-url a {
+  color: #12C; display: inline; font-family: arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; height: auto; line-height: 15px; list-style-image: none; list-style-position: outside;
+  list-style-type: none; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; min-height: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;
+  padding-top: 0px; text-align: left; text-decoration: none; width: auto; 
+}
+ 
+.google-grey{
+  color: #666;  display: block;   font-family: arial, sans-serif;  font-size: 13px;  font-weight: normal;   height: 15px;
+  line-height: 15px;  list-style-image: none;   list-style-position: outside;  list-style-type: none;   margin-bottom: 1px;
+  margin-left: 0px;   margin-right: 0px;  margin-top: 0px;    overflow-y: visible;     padding-bottom: 0px;   padding-left: 0px;
+  padding-right: 0px;        text-align: left;  visibility: visible;     max-width: 512px;  
+  padding-top: 0px;
+}
+
+
+.google-desc{
+  color: #222;  font-family: arial, sans-serif;   font-size: 13px;  font-weight: normal;  height: auto;   line-height: 18.2px;
+  list-style-image: none;  list-style-position: outside;   list-style-type: none;   margin-bottom: 0px;  margin-left: 0px;
+  margin-right: 0px;   margin-top: 0px;   padding-bottom: 0px;  padding-left: 0px;  padding-right: 0px;   padding-top: 0px;
+  text-align: left;  visibility: visible;   max-width: 600px;
+}
+
+
+#google-nahled{
+  border: 1px solid #dddddd; 
+  max-width:600px;
+  padding: 15px;
+  margin: 0 0 10px 0;
+}
+    #aux {
+        margin-top: 2em; 
+    }
+    #result{
+        min-height: 10em; 
+    }
+    .ql-toolbar {
+        margin-top: 1em; 
+    }
+
+    .ql-editor {
+        min-height: 10em;  
+    }
+
+	/* Estos son los estilos para nuestros campos inválidos */
+	input:invalid{
+	border-color: #900;
+	background-color: #FDD;
+	}
+
+	input:focus:invalid {
+	outline: none;
+	}
+
+	/* Estos son los estilos para nuestros mensajes de error */
+	.error {
+	width  : 100%;
+	padding: 0;
+	
+	font-size: 80%;
+	color: white;
+	background-color: #900;
+	border-radius: 0 0 5px 5px;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+	.error.active {
+	padding: 0.3em;
+	}
+	.emoji {
+		cursor: pointer;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Generic Project</h1>
+		</div>
+		<section id="menu" class="d-flex justify-content-center bg-dark">
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark container">
+			  <a class="navbar-brand" href="./">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			    <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Delete my account</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>    
+			    </ul>
+			  </div>  
+			</nav>
+		</section>
+						<section id="loguedMenu" class="d-flex justify-content-center bg-primary">
+			<nav class="navbar navbar-expand-md bg-primary navbar-dark container p-0">
+			  <spam class="navbar-brand">Logued</spam>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#loguedNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="loguedNavbar">
+			    <ul class="navbar-nav d-flex justify-content-between" style="width: 100%;">
+			      <li class="nav-item">
+			        <a class="nav-link" href="/logueduser/addpost">Añadir Post</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="/logueduser/userPosts">Ver mis posts</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="/login">Desconectarse</a>
+				  </li>
+			    </ul>
+			  </div>  
+			</nav>
+		</section>
+						<section id="loguedMenu" class="d-flex justify-content-center bg-info">
+			<nav class="navbar navbar-expand-md bg-info navbar-dark container p-0">
+			  <spam class="navbar-brand">Admin</spam>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#loguedNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="loguedNavbar">
+			    <ul class="navbar-nav d-flex justify-content-between" style="width: 100%;">
+				  <li class="nav-item">
+			        <a class="nav-link" href="/logueduser/admin/adminusers">Usuarios</a>
+				  </li>
+			    </ul>
+			  </div>  
+			</nav>
+		</section>
+					</header>
+	<div class="container d-flex justify-content-center">
+		<main class="card">
+			<div class="card-body" id="inputs">
+	<section id="comonData">
+		<section class="form-group">
+			<label for="title">Title</label>
+			<input required="" type="text" class="form-control" id="title"  name="title" placeholder="Samsung Galaxy s10" onkeyup="generateLink(this)">
+			<div class="invalid-feedback">Example invalid feedback text</div>
+		</section>
+		<section class="form-group">
+			<label for="metaTitle">Meta title (<span style="font-size: 8pt;">pixels:<span id="title-length">0</span>, characters:<span id="title-string-length">0</span></span>)</label>
+			<input required="" type="text" class="form-control" id="metaTitle"  name="metaTitle" maxlength="65" placeholder="Samsung Galaxy s10">
+			<div class="invalid-feedback" id="metaTitle-error">El metatítulo debe tener como mínimo 30 caracteres y como máximo 65</div>
+		</section>
+		<div class="progress mb-2">
+			<div class="progress-bar" role="progressbar" id="progressMetaTitle" aria-valuenow="0" aria-valuemin="0" aria-valuemax="65"></div>
+		</div>
+		<section class="form-group">
+			<label for="link">Link</label>
+			<input required="" type="url" class="form-control" id="link"  name="link"  placeholder="samsung-galaxy-s10">
+		</section>
+		<section class="form-group mb-1">
+			<label for="metaDescription">Meta description (<span style="font-size: 8pt;">pixels:<span id="desc-length">0</span>, characters:<span id="desc-string-length">0</span></span>)</label>
+			<textarea required="" class="form-control" id="metaDescription" rows="2" maxlength="210"></textarea>
+			<div class="invalid-feedback" id="metaTitle-error">La metadescripción debe tener como mínimo 100 caracteres y como máximo 210</div>
+		</section>
+		<div class="progress mb-2">
+			<div class="progress-bar" role="progressbar" id="progressMetaDescription" aria-valuenow="0" aria-valuemin="0" aria-valuemax="210"></div>
+		</div>
+		<section id="product" class="form-group ">
+			<section class="form-check">
+				<input type="checkbox" class="form-check-input" id="isAProduct" onchange="isAProductFunc()" >
+				<label class="form-check-label" for="isAProduct">Es un producto</label>
+			</section>
+		</section>
+		<section id="googlePreview" class="card">
+			<div class="card-body">
+				<label>Google Preview:</label>
+				<div id="google-nahled" style="background-color:#fff;">                       
+					<div style="display:block;" id="google-title" class="google-title">El título en Google tiene un límite de 580px en ordenadores.</div>   
+					<div class="n9USt nCkwMd" id="google-valoration" style="display: none;">
+						<div class="MUxGbd lyLwlc aLF0Z">Valoración</div><div style="margin-top:4px"></div>
+						<div class="qB1bVd MUxGbd wuQ4Ob WZ8Tjf aLF0Z"><span class="tP9Zud">
+							<span id="ratingValue" aria-hidden="true">0</span> 
+							<div class="Hk2yDb KsR1A" aria-label="Valoración de 0 de un máximo de 5" role="img">
+								<span id="ratingStar" style="width:0px"></span></div>
+								<span id="ratingCount">(0)</span> 
+							</span>
+						</div>
+					</div>             
+					<cite style="display:block;" id="google-url" class="google-url">www.domain.com/page    
+					</cite>   
+					<div id="google-desc" class="google-desc">La meta descripción se corta a los ~920 pixels en ordenadores y a los  ~750px en móviles. Bing y Yahoo la cortan a los ~980px.</div>
+				</div>
+				<section id="googlePreviewInfo">
+					<div>
+						<span id="title-status"></span>
+					</div>
+					<div>
+						<span id="desc-status"></span>
+					</div>
+				</section>
+			</div>
+			<canvas id="canvas" width="0" height="0" style="border:1px solid #d3d3d3;">   Note: The canvas tag is not supported in Internet Explorer 8 and earlier versions.
+		</section>
+		</canvas>
+		<section class="form-row" id="imagePost">
+			<section class="form-group col-md-4">
+    <label for="imagePostImage">Añade una Imagen de portada:</label>
+    <input type="file" class="form-control" name="imagePostImage" id="imagePostImage">
+</section>
+<section class="form-group col-md-4 ">
+    <label for="imagePostName" data-toggle="tooltip" data-placement="top" title="Es el nombre con el que se guardará el archivo en el servidor, en lugar del nombre original del archivo">Nombre para guardar</label>
+    <input type="text" class="form-control" name="imagePostName" id="imagePostName">
+</section>
+<section class="form-group col-md-4">
+    <label for="imagePostAlt" data-toggle="tooltip" data-placement="top" title="Cuando la imagen no se pueda mostrar, se mostrará este texto.">Texto Alternativo</label>
+    <input type="text" class="form-control" name="imagePostAlt" id="imagePostAlt">
+</section>
+<script>
+
+
+</script>		</section>
+		<div class="form-group">
+			<label for="description">Description</label>
+			<div required="" class="form-control" id="description" rows="3"></div>
+		</div>
+		<label for="keyword">KeyWords</label>
+		<section class="d-flex flex-wrap" id="keywords">
+			<article class="col-md-4 form-row">
+				<section class="form-group col-9 p-0">
+					<input required="" type="text" class="form-control keywords" name="keyword" value="comprar">
+				</section>
+				<div class="form-group col-3 p-0">
+					<button type="button" class="btn btn-danger" id="removeBottom" style="display: none;" onclick="removeKeyword(this)">&#8855;</button>
+				</div>
+			</article>
+			<div class="form-group row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-success" onclick="addKeyword()" id="addKeywordButtom">Add keyword</button>
+				</div>
+			</div>
+			<div class="invalid-feedback">El número máximo de keywords no puede ser mayor de 15.</div>
+		</section>
+		<section class="form-group row card-body">
+			<label class="col-sm-2 col-form-label" for="productsKind">Tipo de productos</label>
+				<select class="custom-select col-sm-10" id="productsKind" onchange="changeProductKind(this)">
+					<option value="none" selected>Ninguno</option>
+					<option value="smartphone">SmartPhone</option>
+			</select>
+		</section>
+	</section>
+	<section id="products" class="card">
+		<label class="card-body">Productos</label>
+	</section>
+	<button class="btn btn-success" onclick="imagesHaveAltAttribute()">Añadir alt a las imágenes</button>
+	<button class="btn btn-primary" onclick="send()">Send</button>
+</div>
+<div class="modal" id="altModalInfo" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title">Debes añadir un alt a todas las imágenes</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <!--<p>Es importante añadir un alt a todas las imágenes para tener mejores resultados en los buscadores.</p>-->
+		  <div class="form-group">
+			<label for="altImg">Introduce el alt que quierres que tenga la foto.</label>
+			<input type="text" class="form-control" id="altImg" aria-describedby="emailHelp" placeholder="Ej: Teléfono de oferta Samsung Galaxy S10">
+		  </div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="setAltToImage()">Guardar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+<div class="float-right">				
+	<button type="button" class="btn btn-warning float-right fixed-bottom m-5" style="left: auto;" id="emojuBottom" data-toggle="modal" data-target="#exampleModal">Emojis</button>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Click to copy the emoji</h5>
+		  <button type="button" class="close" id="closeModal"   data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body d-flex flex-wrap" style="font-size: larger;">
+		  <div class="emoji" onclick="copyEmoji(this)">▷</div>
+		  <div class="emoji" onclick="copyEmoji(this)">👉</div>
+		  <div class="emoji" onclick="copyEmoji(this)">👍</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🤙</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🤝</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🙌</div>
+		  <div class="emoji" onclick="copyEmoji(this)">👂</div>
+		  <div class="emoji" onclick="copyEmoji(this)">👀</div>
+		  <div class="emoji" onclick="copyEmoji(this)">💣</div>
+		  <div class="emoji" onclick="copyEmoji(this)">💨</div>
+		  <div class="emoji" onclick="copyEmoji(this)">💥</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🙈</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🙊</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🏃</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🚀</div>
+		  <div class="emoji" onclick="copyEmoji(this)">⏳</div>
+		  <div class="emoji" onclick="copyEmoji(this)">⏰</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🔥</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🌡️</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🔊</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🔔</div>
+		  <div class="emoji" onclick="copyEmoji(this)">💻</div>
+		  <div class="emoji" onclick="copyEmoji(this)">📺</div>
+		  <div class="emoji" onclick="copyEmoji(this)">📷</div>
+		  <div class="emoji" onclick="copyEmoji(this)">📹</div>
+		  <div class="emoji" onclick="copyEmoji(this)">💸</div>
+		  <div class="emoji" onclick="copyEmoji(this)">💲</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🔗</div>
+		  <div class="emoji" onclick="copyEmoji(this)">✅</div>
+		  <div class="emoji" onclick="copyEmoji(this)">❓</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🔴</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🔵</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🚩</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🛒</div>
+		  <div class="emoji" onclick="copyEmoji(this)">🗨️</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <script>
+    let lastFocus;
+    let metaTitle = document.getElementById("metaTitle");
+    let metaDescription = document.getElementById("metaDescription");
+    metaTitle.addEventListener('focus', (event) => {
+        lastFocus = metaTitle;   
+    });
+    metaDescription.addEventListener('focus', (event) => {
+        lastFocus = metaDescription;   
+    });
+    function copyEmoji(self) {
+        
+        copyEmojiToClipboard(self);
+        if(lastFocus){
+            lastFocus.value += self.textContent;
+            lastFocus.focus();
+            setTimeout(function(){ lastFocus.focus(); }, 50);
+            setTimeout(function(){ lastFocus.focus(); }, 100);
+            setTimeout(function(){ lastFocus.focus(); }, 150);
+            setTimeout(function(){ lastFocus.focus(); }, 200);
+            setTimeout(function(){ lastFocus.focus(); }, 250);
+            setTimeout(function(){ lastFocus.focus(); }, 300);
+            setTimeout(function(){ lastFocus.focus(); }, 350);
+            //setTimeout(function(){ lastFocus.focus(); }, 400);
+            //setTimeout(function(){ lastFocus.focus(); }, 800);
+        }
+            
+    }
+    function copyEmojiToClipboard(self) {
+        var range, selection, worked;
+
+        if (document.body.createTextRange) {
+            range = document.body.createTextRange();
+            range.moveToElementText(self);
+            range.select();
+        } else if (window.getSelection) {
+            selection = window.getSelection();        
+            range = document.createRange();
+            range.selectNodeContents(self);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }else{
+            alert('unable to copy text');
+        }
+
+        try {
+            if(document.execCommand('copy')){
+                document.getElementById("closeModal").click();
+            }else{
+                alert('unable to copy text');
+            }
+        }
+        catch (err) {
+            alert('unable to copy text');
+        }
+    }
+  </script>
+
+
+		</main>
+		<!--<aside class="col-sm-3 card">
+			<div class="card-body">
+				<section id="generic-login" class="border-bottom  pb-3">
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  <div class="form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</section>
+
+			</div>
+		</aside>-->
+	</div>
+	<script>
+	const _myDomain = "www.comprarmovilnuevo.es.test";
+	const _UploadImageUrl = 'uploadimage';
+	const _SendPostURL = "addPost";
+	const _coment = `<article class="card card-body">
+						<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentName">Nombre </label>
+    <input required="" type="text" class="form-control col-sm-10" id="comentName"  name="comentName">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentTitle">Título</label>
+    <input required="" type="text" class="form-control col-sm-10" id="ComentTitle"  name="ComentTitle">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentComent">Comentario</label>
+    <textarea required="" class="form-control col-sm-10" id="comentComent"  name="comentComent" rows="3"></textarea>
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentValoration">Valoración</label>
+            <select class="custom-select col-sm-10 comentValoration" id="comentValoration" onchange="changeValoration()">
+            <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</section>						<button type="button" class="btn btn-danger" onclick="removeComent(this)">Eliminar Comentario</button>
+					</article>`;
+
+	const _productDetails  = `<section id="productDetails" class="card card-body" >
+      <section class="form-group row">
+        <label for="productName" class="col-sm-2 col-form-label">Nombre del producto: </label>
+        <input type="text" class="form-control col-sm-10" id="productName">
+      </section>
+      <section id="coments" class="card">
+        <article class="card card-body">
+          <section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentName">Nombre </label>
+    <input required="" type="text" class="form-control col-sm-10" id="comentName"  name="comentName">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentTitle">Título</label>
+    <input required="" type="text" class="form-control col-sm-10" id="ComentTitle"  name="ComentTitle">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentComent">Comentario</label>
+    <textarea required="" class="form-control col-sm-10" id="comentComent"  name="comentComent" rows="3"></textarea>
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentValoration">Valoración</label>
+            <select class="custom-select col-sm-10 comentValoration" id="comentValoration" onchange="changeValoration()">
+            <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</section>        </article>
+      </section>
+      <div class="card-body">
+        <button type="button" class="btn btn-success car" onclick="addComent()" style="width: 100%;">Añadir Comentario</button>
+      </div>
+    </section>`;
+	const _productsKind = new Object();
+	_productsKind.smartphone = `<article class="product card card-body smartphone-article">
+    <section class="form-group">
+        <label for="title">Título</label>
+        <input required="" type="text" class="form-control" id="title"  name="title" placeholder="El titulo se intentará rellenar solo: Samsung Galaxy s10 64gb 4gb de ram">
+    </section>
+    <section class="form-group">
+        <label for="marca">Marca</label>
+        <input required="" type="text" class="form-control" id="marca"  name="marca" placeholder="Samsung" >
+    </section>
+    <section class="form-group">
+        <label for="modelo">Modelo</label>
+        <input required="" type="text" class="form-control" id="modelo"  name="modelo" placeholder="Galaxy s10" >
+    </section>
+    <section class="form-group">
+        <label for="procesador">Procesador</label>
+        <input required="" type="text" class="form-control" id="procesador"  name="procesador" placeholder="Snapdragron 810" >
+    </section>
+    <section class="form-group">
+        <label for="memoriaRam">Memoria RAM (GB)</label>
+        <input required="" type="number" class="form-control" id="memoriaRam"  name="memoriaRam" placeholder="3GB">
+    </section>
+    <section class="form-group">
+        <label for="almacenamiento">Alamacenamiento (GB)</label>
+        <input required="" type="number" class="form-control" id="almacenamiento"  name="almacenamiento" placeholder="3GB">
+    </section>
+    <section class="form-group">
+        <label for="pantalla">Pantalla</label>
+        <input required="" type="text" class="form-control" id="pantalla"  name="pantalla" placeholder="AMOLED 6,47 pulgadas con notch">
+    </section>
+    <section class="form-group">
+        <label for="dimensiones">Diemsiones</label>
+        <input required="" type="text" class="form-control" id="dimensiones"  name="dimensiones" placeholder="AMOLED 6,47 pulgadas con notch">
+    </section>
+    <section class="form-group">
+        <label for="bateria">Batería</label>
+        <input required="" type="text" class="form-control" id="bateria"  name="bateria" placeholder="3.800mA">
+    </section>
+    <section class="form-group">
+        <label for="sistemaOperativo">SistemaOperativo</label>
+        <input required="" type="text" class="form-control" id="sistemaOperativo"  name="sistemaOperativo" placeholder="Android 9">
+    </section>
+    <section class="form-group">
+        <label for="amazonLink">Amazon</label>
+        <input required="" type="url" class="form-control" id="amazonLink"  name="amazonLink">
+    </section>
+    <div class="form-group">
+        <button type="button" class="btn btn-danger" id="removeProduct" onclick="removeProductt(this)" style="display: none;">Borrar variante</button>
+    </div>
+</article>
+<div id="buttons" class="card-body row">
+    <div class="col-md-2">
+        <button type="button" class="btn btn-success" onclick="addProduct()">Añadir variante</button>
+    </div>
+</div>`;
+
+	var afiliatesSites = new Map();
+    afiliatesSites.set("www.amazon.es", {name: "Amazon", 
+                                         title:"Comprar esta oferta en Amazon", 
+                                         href:(self, url, addAfiliateTag)=>{
+                                            let href = url.match(/https?:\/\/www\.amazon\.es\/(?:[^\/]+\/dp\/|gp\/product\/)(?<id>[^?\/]+)/gm);
+                                            if(href == null){
+                                                return url;
+                                            }else{
+                                                if(addAfiliateTag){
+                                                    href += `/?tag=${self.afiliateTag}`;
+                                                }
+                                                return href;
+                                            }
+                                            },
+                                        afiliateTag: "-"
+                                            });
+    afiliatesSites.set("amzn.to", { name: "Amazon", 
+                                    title:"Comprar esta oferta en Amazon", 
+                                    href:(url)=>{
+                                            return url;
+                                            },
+                                    afiliateTag : "-",
+                                            });
+</script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="/public/js/description.js" referrerpolicy="origin"></script>
+  <script src="/public/js/meta.js" referrerpolicy="origin"></script>
+<script>
+
+document.addEventListener('paste', (event) => {
+
+	let target = event.target;
+	if(target.tagName == "INPUT" || target.tagName == "TEXTAREA"){
+		let paste = (event.clipboardData || window.clipboardData).getData('text');
+		//target.value = paste.toUpperCase();
+		let host = paste.match(/(?<domain>[a-zA-z](?:[a-zA-Z0-9]|(?:(?:[\.\-_])\w)){1,252}\.(?<tdl>[a-zA-Z]{2,6})\.?)/gmi);
+		console.log(host);
+		if(host.length > 0){
+			host = host[0];
+			host = afiliatesSites.get(host);
+			if(host != undefined){
+				target.value = host.href(host, paste, true);
+				event.preventDefault();
+			}
+		}
+		
+	}
+    
+	console.log(event);
+
+    /*const selection = window.getSelection();
+    if (!selection.rangeCount) return false;
+    selection.deleteFromDocument();
+    selection.getRangeAt(0).insertNode(document.createTextNode(paste));
+	*/
+    
+});
+
+function changeProductKind(self) {
+	let productsArray = document.getElementById("products");
+	// We remove all children
+	while (productsArray.firstChild) {
+		productsArray.removeChild(productsArray.firstChild);
+	}
+	let productKind = self.options[self.selectedIndex].value;
+	if(productKind != "none")
+		productsArray.insertAdjacentHTML("beforeend", _productsKind[productKind]);
+}
+
+function removeProductt(self) {
+	products.removeChild(self.parentNode.parentNode);
+}
+function addProduct() {
+	let products = document.getElementById("products");
+	let newProduct = products.children[products.children.length-2].cloneNode(true);
+	newProduct.getElementsByTagName("button")[0].removeAttribute("style");
+	products.insertBefore(newProduct, products.children[products.children.length-1]);
+}
+
+
+
+function stringIsCorrect(input) {
+	return (input && input !== null && input !== "" && input.length > 0) ? true : false;
+}
+
+function getValue(nodeIn) {
+	let id = null;
+	let value = null;
+	let error = false;
+	const node = nodeIn;
+	const aux = getElementWithValue(nodeIn);
+	let input;
+	if(aux.length > 1){
+		console.error(nodeIn ,"There are more than 1 input element.")
+	}else if(aux.length == 0){
+		console.error(nodeIn ,"There isn't an input element.")
+	}else{
+		input = aux[0];
+		id = input.id ? input.id : input.name;
+		switch (aux[0].tagName) {
+			case "SELECT":
+				value = input.options[input.selectedIndex].value;
+				break;
+			case "INPUT":
+			case "TEXTAREA":
+				if(input.hasAttribute("type") && input.getAttribute("type") == "checkbox"){
+					value = input.checked;
+				}else if(stringIsCorrect(input.value) && input.checkValidity()){
+					value = input.value;
+				}else{
+					//console.error(input,"Value not valid");
+					error = true;
+					input.focus(); 
+				}
+				break;
+		
+			default:
+				break;
+		}
+	}
+	return [id, value, error];
+
+}
+
+let elementsToArray = ["ARTICLE", ];
+let elementsToGetValue = ["INPUT", "TEXTAREA"];
+
+function getElementWithValue(node) {
+	return node.querySelectorAll("input, textarea, select");
+}
+
+function getChildrenValues(node, stopIfError, error) {
+	let result = [];
+	//let error = false;
+	let nodeKind; 
+	error = error === undefined ? false : error;
+	if(node.children.length > 0 && (!stopIfError || stopIfError && !error)){
+		// We detect the nodes types
+		let i = 0; 
+		do {
+			nodeKind = node.children[i].tagName;			
+		} while ((nodeKind != "ARTICLE" && nodeKind != "SECTION") && ++i < node.children.length);
+
+		switch (nodeKind) {
+			case "ARTICLE":
+				result = [];
+				for (let index = 0; index < node.children.length && (!stopIfError || stopIfError && !error); index++) {
+					const element = node.children[index];
+					if(element.tagName === nodeKind){
+						let aux = getChildrenValues(element, stopIfError, error);
+						result.push(aux[0]);
+						error =  error || aux[1];
+					}else{
+						let inputs = getElementWithValue(element);
+						if(inputs.length > 0){
+							console.err(inputs[0], "Error: this node is not porpely formated. You have values outside of an article tag. Put all articles tag inside an section tag with an id.");
+						}
+					}
+				}
+				break;
+			case "SECTION":
+				result = new Object();
+				for (let index = 0; index < node.children.length && (!stopIfError || stopIfError && !error); index++) {
+					const element = node.children[index];
+					if(element.tagName === nodeKind){
+						let inputs = getElementWithValue(element);
+						if (inputs.length == 1) {
+							let aux = getValue(element);
+							error = error || aux[2];
+							let id = aux[0];
+							let value = aux[1];
+							if(aux[0]){
+								result[id] = value;
+							}else{
+								console.error(element, "Can't found a value on this node");
+								error = true;
+							}
+						} else {
+							let id = element.id;
+							if(!id){
+								console.error(element, "This element must have an id.")
+								error = true; 
+							}else{
+								let aux = getChildrenValues(element, stopIfError, error)
+								if(Array.isArray(aux[0])){
+									if(aux[0].length > 0){
+										result[id] = aux[0];
+									}
+								}else{
+									result[id] = new Object();
+									for(var key in aux[0]) {
+										result[id][key] = aux[0][key];
+									}
+								}
+								error = error || aux[1];
+							}
+						}
+					}else{
+						let inputs = getElementWithValue(element);
+						if(inputs.length > 0){
+							console.error(element, "Error: this node is not porpely formated. You have values outside of a section tag.");
+							error = true;
+						}
+					}
+				}
+				break;
+			default:
+				let inputs = getElementWithValue(node);
+				if(inputs.length > 0){
+					console.error(node, "Error: this node is not porpely formated. \nYou have values outside of a section or article tag. \nOr there are an article or a section without values");
+					error = true;
+				}
+				break;
+		}
+	}else{
+		console.error(node, "Error: this node is empty.");
+		error = true;
+	}
+	/*if(error){
+		console.log(node);
+	}*/
+
+	return [result, error];
+}
+
+/*function getSectionsValues(node) {
+	let result = new Object();
+	let error = false; 
+	for (let index = 0; index < node.children.length; index++) {
+		const element = node.children[index];
+		// Ignore nodes that aren't section, like Labels or buttons
+		if (element.tagName === "SECTION") {
+			let id = element.id; 
+			if(!id){
+				let aux = getValue(element);
+				error = error || aux[2];
+				let id = aux[0];
+				let value = aux[1];
+				if(aux[0]){
+					result[id] = value;
+				}else{
+					console.error(element, "Can't found a value on this node");
+					error = true;
+				}
+			}else{
+				let aux = getChildrenValues(element)
+				if(Array.isArray(aux[0])){
+					if(aux[0].length > 0){
+						result[id] = aux[0];
+						error = error || aux[1];
+					}
+				}else if(aux[0].hasOwnProperty("aux")){
+					result[id] = aux[0].aux;
+				}else{
+					console.error(aux, "aux");
+
+				}
+				
+			}
+		}else{
+			let inputs = getElementWithValue(element);
+			if(inputs.length == 1){
+				let aux = getValue(element);
+				error = error || aux[2];
+				let id = aux[0];
+				let value = aux[1];
+				if(aux[0]){
+					result[id] = value;
+				}else{
+					console.error(element, "Can't found a value on this node");
+					error = true;
+				}
+			}else if(inputs.length > 1){
+				console.error("Error: this node is not porpely formated. This node have more than one value.", element);
+			}
+		}
+	}
+	return [result, error];
+}*/
+
+var imageToAlt;
+function setAltToImage() {
+	imageToAlt.setAttribute("alt", document.getElementById("altImg").value);
+	document.getElementById("altImg").value = "";
+	imagesHaveAltAttribute();
+}
+function imagesHaveAltAttribute() {
+	let images = descriptionEditor.body.getElementsByTagName("img");
+	let resultCorrect = true;
+	for (const image of images) {
+		resultCorrect = resultCorrect && image.hasAttribute("alt") && image.getAttribute("alt").length > 0; 
+		if (!resultCorrect) {
+			image.scrollIntoView(true);
+			image.click();
+			imageToAlt = image;
+			$('#altModalInfo').modal('show')
+			break;
+		}
+	}
+	return resultCorrect;
+}
+function send() {
+	//let products = document.getElementById("products");
+	let [post, error] = getChildrenValues(document.getElementById("inputs"), true);
+	let keywords = [];
+	/*var reader = new FileReader();
+	reader.onload = function(event) {
+    // I usually remove the prefix to only keep data, but it depends on your server
+		var data = event.target.result.replace("data:"+ file.type +";base64,", '');
+		console.log(event);
+		
+		
+	}
+
+
+	reader.readAsDataURL(image.value);*/
+
+	let commonData = post.comonData;
+	let products; 
+	if(post.products){
+		products = post.products;
+	}
+
+	post = commonData; 
+	if(post.products){
+		post.products = products;
+	}
+
+
+	let keywordsElements = document.getElementsByClassName("keywords");
+	if(keywordsElements.length > 15){
+		error = true;
+		return; 
+	}
+	for(let keyword of keywordsElements){
+		if(stringIsCorrect(keyword.value)){
+			keywords.push(keyword.value)
+		}else{
+			alert("Hay keywords vacías.")
+			return;
+		}
+	}
+
+	if(post.metaTitle.length < 30 || post.metaTitle > 65){
+		error = true; 
+		document.getElementById("metaTitle").closest(".form-group").querySelector('.invalid-feedback').style.display = "block";
+		document.getElementById("metaTitle").focus();
+		return;
+	}
+
+	if(post.metaDescription.length < 100 || post.metaDescription > 210){
+		error = true; 
+		document.getElementById("metaDescription").closest(".form-group").querySelector('.invalid-feedback').style.display = "block";
+		document.getElementById("metaDescription").focus();
+		return;
+	}
+
+
+	post.keywords = keywords; 
+
+  console.log(error);
+  //imagesHaveAltAttribute();
+  
+	if(!error && imagesHaveAltAttribute()){
+
+		post["html"] = descriptionEditor.body.innerHTML;
+		let formData = new FormData();
+		formData.append("postImage", document.getElementById("imagePostImage").files[0]);
+		formData.append("json", JSON.stringify(post));
+		fetch(_SendPostURL, {
+				  method: 'POST', // or 'PUT'
+				  body: formData, // data can be `string` or {object}!
+				  /*headers:{
+				    'Content-Type': 'application/json'
+				  }*/
+				}).then(res => {
+					if(res.ok){
+						res.text().then(text => {
+							console.log(text); 
+							let data = JSON.parse(text);
+							console.log(data); 
+
+							
+
+						}).catch(err => {
+							console.log("Error",err);
+							
+						}); 
+					}
+				})
+				.catch(error => {
+					console.log("Error",error);
+				})
+				.then(response => console.log('Success:', response));
+		}
+
+	console.log(post);
+
+}
+
+
+	
+	
+	
+
+</script>
+
+</body>
+</html>

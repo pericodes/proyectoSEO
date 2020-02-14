@@ -1,0 +1,27 @@
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentName">Nombre </label>
+    <input required="" type="text" class="form-control col-sm-10" id="comentName"  name="comentName">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentTitle">Título</label>
+    <input required="" type="text" class="form-control col-sm-10" id="ComentTitle"  name="ComentTitle">
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentComent">Comentario</label>
+    <textarea required="" class="form-control col-sm-10" id="comentComent"  name="comentComent" rows="3"></textarea>
+</section>
+<section class="form-group row">
+    <label class="col-sm-2 col-form-label" for="comentValoration">Valoración</label>
+    {% if changeValoration %}
+        <select class="custom-select col-sm-10 comentValoration" id="comentValoration" onchange="changeValoration()">
+    {% else %}
+        <select class="custom-select col-sm-10" id="comentValoration">
+    {% endif %}
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</section>

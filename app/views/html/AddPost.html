@@ -1,0 +1,707 @@
+{% extends extends %}
+{% block css %}
+<style type="text/css">
+.MUxGbd {
+    padding-top: 1px;
+    margin-bottom: -1px;
+	font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+	font-size: 14px;
+    line-height: 20px;
+}
+.nCkwMd {
+    box-sizing: border-box;
+    padding-right: 8px;
+}
+.n9USt {
+    flex: 1;
+    max-width: 50%;
+}
+#google-description {
+    max-height: 999999px;
+    display: block;
+}
+.uUPGi {
+    font-size: 14px;
+    line-height: 20px;
+}
+.Hk2yDb, .Hk2yDb span {
+    width: 65px;
+    height: 15px;
+    display: inline-block;
+    background: repeat-x 0 0;
+    background-size: 13px 15px;
+    font-size: 0;
+    line-height: 0;
+}
+.aLF0Z {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.Hk2yDb.KsR1A {
+    background-image: url("data:image/svg+xml,\00003csvg width='13px' height='15px' xmlns='http://www.w3.org/2000/svg'>\00003cpath fill='%23d1d1d1' d='m0,7.6l4.7,0,1.5-4.5,1.5,4.5,4.7,0-3.8,2.8,1.5,4.5-3.8-2.8-3.8,2.8,1.5-4.5'/>\00003c/svg>");
+}
+.Hk2yDb.KsR1A span {
+    background-image: url("data:image/svg+xml,\00003csvg width='13px' height='15px' xmlns='http://www.w3.org/2000/svg'>\00003cpath fill='%23fabb05' d='m0,7.6l4.7,0,1.5-4.5,1.5,4.5,4.7,0-3.8,2.8,1.5,4.5-3.8-2.8-3.8,2.8,1.5-4.5'/>\00003c/svg>");
+}
+.WZ8Tjf {
+    color: #70757A;
+}
+
+
+
+/* Google snippet nahlady */
+.google-title{
+  color: #12C;   font-family: arial, sans-serif;   font-size: 20px;  font-weight: 400;   height: auto;  line-height: 19px;
+  list-style-image: none;   list-style-position: outside;    list-style-type: none;    margin-bottom: 0px;   margin-left: 0px;
+  margin-right: 0px;  margin-top:0px;  padding:0px;   text-align: left;  text-decoration: none;  visibility: visible;
+  width: auto;
+}
+
+.google-url{
+  color: #093;  display: block;   font-family: arial, sans-serif;    font-size: 14px;  font-style: normal;
+  font-weight: normal;   height: auto;  line-height: 16px;   list-style-image: none;   list-style-position: outside;
+  list-style-type: none;    margin:0px;   padding:0px;  text-align: left;   visibility: visible;   max-width: 600px;
+}
+
+.google-url a {
+  color: #12C; display: inline; font-family: arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; height: auto; line-height: 15px; list-style-image: none; list-style-position: outside;
+  list-style-type: none; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; min-height: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;
+  padding-top: 0px; text-align: left; text-decoration: none; width: auto; 
+}
+ 
+.google-grey{
+  color: #666;  display: block;   font-family: arial, sans-serif;  font-size: 13px;  font-weight: normal;   height: 15px;
+  line-height: 15px;  list-style-image: none;   list-style-position: outside;  list-style-type: none;   margin-bottom: 1px;
+  margin-left: 0px;   margin-right: 0px;  margin-top: 0px;    overflow-y: visible;     padding-bottom: 0px;   padding-left: 0px;
+  padding-right: 0px;        text-align: left;  visibility: visible;     max-width: 512px;  
+  padding-top: 0px;
+}
+
+
+.google-desc{
+  color: #222;  font-family: arial, sans-serif;   font-size: 13px;  font-weight: normal;  height: auto;   line-height: 18.2px;
+  list-style-image: none;  list-style-position: outside;   list-style-type: none;   margin-bottom: 0px;  margin-left: 0px;
+  margin-right: 0px;   margin-top: 0px;   padding-bottom: 0px;  padding-left: 0px;  padding-right: 0px;   padding-top: 0px;
+  text-align: left;  visibility: visible;   max-width: 600px;
+}
+
+
+#google-nahled{
+  border: 1px solid #dddddd; 
+  max-width:600px;
+  padding: 15px;
+  margin: 0 0 10px 0;
+}
+    #aux {
+        margin-top: 2em; 
+    }
+    #result{
+        min-height: 10em; 
+    }
+    .ql-toolbar {
+        margin-top: 1em; 
+    }
+
+    .ql-editor {
+        min-height: 10em;  
+    }
+
+	/* Estos son los estilos para nuestros campos inválidos */
+	input:invalid{
+	border-color: #900;
+	background-color: #FDD;
+	}
+
+	input:focus:invalid {
+	outline: none;
+	}
+
+	/* Estos son los estilos para nuestros mensajes de error */
+	.error {
+	width  : 100%;
+	padding: 0;
+	
+	font-size: 80%;
+	color: white;
+	background-color: #900;
+	border-radius: 0 0 5px 5px;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+	.error.active {
+	padding: 0.3em;
+	}
+	.emoji {
+		cursor: pointer;
+	}
+
+
+</style>
+{% endblock %}
+{% block main %}
+<div class="card-body" id="inputs">
+	<section id="comonData">
+		<section class="form-group">
+			<label for="title">Title</label>
+			<input required="" type="text" class="form-control" id="title"  name="title" placeholder="Samsung Galaxy s10" onkeyup="generateLink(this)">
+			<div class="invalid-feedback">Example invalid feedback text</div>
+		</section>
+		<section class="form-group">
+			<label for="metaTitle">Meta title (<span style="font-size: 8pt;">pixels:<span id="title-length">0</span>, characters:<span id="title-string-length">0</span></span>)</label>
+			<input required="" type="text" class="form-control" id="metaTitle"  name="metaTitle" maxlength="65" placeholder="Samsung Galaxy s10">
+			<div class="invalid-feedback" id="metaTitle-error">El metatítulo debe tener como mínimo 30 caracteres y como máximo 65</div>
+		</section>
+		<div class="progress mb-2">
+			<div class="progress-bar" role="progressbar" id="progressMetaTitle" aria-valuenow="0" aria-valuemin="0" aria-valuemax="65"></div>
+		</div>
+		<section class="form-group">
+			<label for="link">Link</label>
+			<input required="" type="url" class="form-control" id="link"  name="link"  placeholder="samsung-galaxy-s10">
+		</section>
+		<section class="form-group mb-1">
+			<label for="metaDescription">Meta description (<span style="font-size: 8pt;">pixels:<span id="desc-length">0</span>, characters:<span id="desc-string-length">0</span></span>)</label>
+			<textarea required="" class="form-control" id="metaDescription" rows="2" maxlength="210"></textarea>
+			<div class="invalid-feedback" id="metaTitle-error">La metadescripción debe tener como mínimo 100 caracteres y como máximo 210</div>
+		</section>
+		<div class="progress mb-2">
+			<div class="progress-bar" role="progressbar" id="progressMetaDescription" aria-valuenow="0" aria-valuemin="0" aria-valuemax="210"></div>
+		</div>
+		<section id="product" class="form-group ">
+			<section class="form-check">
+				<input type="checkbox" class="form-check-input" id="isAProduct" onchange="isAProductFunc()" >
+				<label class="form-check-label" for="isAProduct">Es un producto</label>
+			</section>
+		</section>
+		<section id="googlePreview" class="card">
+			<div class="card-body">
+				<label>Google Preview:</label>
+				<div id="google-nahled" style="background-color:#fff;">                       
+					<div style="display:block;" id="google-title" class="google-title">El título en Google tiene un límite de 580px en ordenadores.</div>   
+					<div class="n9USt nCkwMd" id="google-valoration" style="display: none;">
+						<div class="MUxGbd lyLwlc aLF0Z">Valoración</div><div style="margin-top:4px"></div>
+						<div class="qB1bVd MUxGbd wuQ4Ob WZ8Tjf aLF0Z"><span class="tP9Zud">
+							<span id="ratingValue" aria-hidden="true">0</span> 
+							<div class="Hk2yDb KsR1A" aria-label="Valoración de 0 de un máximo de 5" role="img">
+								<span id="ratingStar" style="width:0px"></span></div>
+								<span id="ratingCount">(0)</span> 
+							</span>
+						</div>
+					</div>             
+					<cite style="display:block;" id="google-url" class="google-url">www.domain.com/page    
+					</cite>   
+					<div id="google-desc" class="google-desc">La meta descripción se corta a los ~920 pixels en ordenadores y a los  ~750px en móviles. Bing y Yahoo la cortan a los ~980px.</div>
+				</div>
+				<section id="googlePreviewInfo">
+					<div>
+						<span id="title-status"></span>
+					</div>
+					<div>
+						<span id="desc-status"></span>
+					</div>
+				</section>
+			</div>
+			<canvas id="canvas" width="0" height="0" style="border:1px solid #d3d3d3;">   Note: The canvas tag is not supported in Internet Explorer 8 and earlier versions.
+		</section>
+		</canvas>
+		<section class="form-row" id="imagePost">
+			{% include  includes["imageUpload"] %}
+		</section>
+		<div class="form-group">
+			<label for="description">Description</label>
+			<div required="" class="form-control" id="description" rows="3"></div>
+		</div>
+		<label for="keyword">KeyWords</label>
+		<section class="d-flex flex-wrap" id="keywords">
+			<article class="col-md-4 form-row">
+				<section class="form-group col-9 p-0">
+					<input required="" type="text" class="form-control keywords" name="keyword" value="comprar">
+				</section>
+				<div class="form-group col-3 p-0">
+					<button type="button" class="btn btn-danger" id="removeBottom" style="display: none;" onclick="removeKeyword(this)">&#8855;</button>
+				</div>
+			</article>
+			<div class="form-group row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-success" onclick="addKeyword()" id="addKeywordButtom">Add keyword</button>
+				</div>
+			</div>
+			<div class="invalid-feedback">El número máximo de keywords no puede ser mayor de 15.</div>
+		</section>
+		<section class="form-group row card-body">
+			<label class="col-sm-2 col-form-label" for="productsKind">Tipo de productos</label>
+				<select class="custom-select col-sm-10" id="productsKind" onchange="changeProductKind(this)">
+					<option value="none" selected>Ninguno</option>
+					<option value="smartphone">SmartPhone</option>
+			</select>
+		</section>
+	</section>
+	<section id="products" class="card">
+		<label class="card-body">Productos</label>
+	</section>
+	<button class="btn btn-success" onclick="imagesHaveAltAttribute()">Añadir alt a las imágenes</button>
+	<button class="btn btn-primary" onclick="send()">Send</button>
+</div>
+<div class="modal" id="altModalInfo" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title">Debes añadir un alt a todas las imágenes</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <!--<p>Es importante añadir un alt a todas las imágenes para tener mejores resultados en los buscadores.</p>-->
+		  <div class="form-group">
+			<label for="altImg">Introduce el alt que quierres que tenga la foto.</label>
+			<input type="text" class="form-control" id="altImg" aria-describedby="emailHelp" placeholder="Ej: Teléfono de oferta Samsung Galaxy S10">
+		  </div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="setAltToImage()">Guardar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+{% include includes["emojis"] %}
+
+{% endblock %}
+
+{% block javaScriptEnd %}
+<script>
+	const _myDomain = "{{myDomain}}";
+	const _UploadImageUrl = '{{uploadImageURL}}';
+	const _SendPostURL = "{{postURL}}";
+	const _coment = `<article class="card card-body">
+						{% include  includes["coment"]  with {'changeValoration': true} only %}
+						<button type="button" class="btn btn-danger" onclick="removeComent(this)">Eliminar Comentario</button>
+					</article>`;
+
+	const _productDetails  = `<section id="productDetails" class="card card-body" >
+      <section class="form-group row">
+        <label for="productName" class="col-sm-2 col-form-label">Nombre del producto: </label>
+        <input type="text" class="form-control col-sm-10" id="productName">
+      </section>
+      <section id="coments" class="card">
+        <article class="card card-body">
+          {% include  includes["coment"] with {'changeValoration': true} only %}
+        </article>
+      </section>
+      <div class="card-body">
+        <button type="button" class="btn btn-success car" onclick="addComent()" style="width: 100%;">Añadir Comentario</button>
+      </div>
+    </section>`;
+	const _productsKind = new Object();
+	_productsKind.smartphone = `{% include  includes["smartphone"] %}`;
+
+	var afiliatesSites = new Map();
+    afiliatesSites.set("www.amazon.es", {name: "Amazon", 
+                                         title:"Comprar esta oferta en Amazon", 
+                                         href:(self, url, addAfiliateTag)=>{
+                                            let href = url.match(/https?:\/\/www\.amazon\.es\/(?:[^\/]+\/dp\/|gp\/product\/)(?<id>[^?\/]+)/gm);
+                                            if(href == null){
+                                                return url;
+                                            }else{
+                                                if(addAfiliateTag){
+                                                    href += `/?tag=${self.afiliateTag}`;
+                                                }
+                                                return href;
+                                            }
+                                            },
+                                        afiliateTag: "{{amazonAffiliateTag}}"
+                                            });
+    afiliatesSites.set("amzn.to", { name: "Amazon", 
+                                    title:"Comprar esta oferta en Amazon", 
+                                    href:(url)=>{
+                                            return url;
+                                            },
+                                    afiliateTag : "{{amazonAffiliateTag}}",
+                                            });
+</script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="/public/js/description.js" referrerpolicy="origin"></script>
+  <script src="/public/js/meta.js" referrerpolicy="origin"></script>
+<script>
+
+document.addEventListener('paste', (event) => {
+
+	let target = event.target;
+	if(target.tagName == "INPUT" || target.tagName == "TEXTAREA"){
+		let paste = (event.clipboardData || window.clipboardData).getData('text');
+		//target.value = paste.toUpperCase();
+		let host = paste.match(/(?<domain>[a-zA-z](?:[a-zA-Z0-9]|(?:(?:[\.\-_])\w)){1,252}\.(?<tdl>[a-zA-Z]{2,6})\.?)/gmi);
+		console.log(host);
+		if(host.length > 0){
+			host = host[0];
+			host = afiliatesSites.get(host);
+			if(host != undefined){
+				target.value = host.href(host, paste, true);
+				event.preventDefault();
+			}
+		}
+		
+	}
+    
+	console.log(event);
+
+    /*const selection = window.getSelection();
+    if (!selection.rangeCount) return false;
+    selection.deleteFromDocument();
+    selection.getRangeAt(0).insertNode(document.createTextNode(paste));
+	*/
+    
+});
+
+function changeProductKind(self) {
+	let productsArray = document.getElementById("products");
+	// We remove all children
+	while (productsArray.firstChild) {
+		productsArray.removeChild(productsArray.firstChild);
+	}
+	let productKind = self.options[self.selectedIndex].value;
+	if(productKind != "none")
+		productsArray.insertAdjacentHTML("beforeend", _productsKind[productKind]);
+}
+
+function removeProductt(self) {
+	products.removeChild(self.parentNode.parentNode);
+}
+function addProduct() {
+	let products = document.getElementById("products");
+	let newProduct = products.children[products.children.length-2].cloneNode(true);
+	newProduct.getElementsByTagName("button")[0].removeAttribute("style");
+	products.insertBefore(newProduct, products.children[products.children.length-1]);
+}
+
+
+
+function stringIsCorrect(input) {
+	return (input && input !== null && input !== "" && input.length > 0) ? true : false;
+}
+
+function getValue(nodeIn) {
+	let id = null;
+	let value = null;
+	let error = false;
+	const node = nodeIn;
+	const aux = getElementWithValue(nodeIn);
+	let input;
+	if(aux.length > 1){
+		console.error(nodeIn ,"There are more than 1 input element.")
+	}else if(aux.length == 0){
+		console.error(nodeIn ,"There isn't an input element.")
+	}else{
+		input = aux[0];
+		id = input.id ? input.id : input.name;
+		switch (aux[0].tagName) {
+			case "SELECT":
+				value = input.options[input.selectedIndex].value;
+				break;
+			case "INPUT":
+			case "TEXTAREA":
+				if(input.hasAttribute("type") && input.getAttribute("type") == "checkbox"){
+					value = input.checked;
+				}else if(stringIsCorrect(input.value) && input.checkValidity()){
+					value = input.value;
+				}else{
+					//console.error(input,"Value not valid");
+					error = true;
+					input.focus(); 
+				}
+				break;
+		
+			default:
+				break;
+		}
+	}
+	return [id, value, error];
+
+}
+
+let elementsToArray = ["ARTICLE", ];
+let elementsToGetValue = ["INPUT", "TEXTAREA"];
+
+function getElementWithValue(node) {
+	return node.querySelectorAll("input, textarea, select");
+}
+
+function getChildrenValues(node, stopIfError, error) {
+	let result = [];
+	//let error = false;
+	let nodeKind; 
+	error = error === undefined ? false : error;
+	if(node.children.length > 0 && (!stopIfError || stopIfError && !error)){
+		// We detect the nodes types
+		let i = 0; 
+		do {
+			nodeKind = node.children[i].tagName;			
+		} while ((nodeKind != "ARTICLE" && nodeKind != "SECTION") && ++i < node.children.length);
+
+		switch (nodeKind) {
+			case "ARTICLE":
+				result = [];
+				for (let index = 0; index < node.children.length && (!stopIfError || stopIfError && !error); index++) {
+					const element = node.children[index];
+					if(element.tagName === nodeKind){
+						let aux = getChildrenValues(element, stopIfError, error);
+						result.push(aux[0]);
+						error =  error || aux[1];
+					}else{
+						let inputs = getElementWithValue(element);
+						if(inputs.length > 0){
+							console.err(inputs[0], "Error: this node is not porpely formated. You have values outside of an article tag. Put all articles tag inside an section tag with an id.");
+						}
+					}
+				}
+				break;
+			case "SECTION":
+				result = new Object();
+				for (let index = 0; index < node.children.length && (!stopIfError || stopIfError && !error); index++) {
+					const element = node.children[index];
+					if(element.tagName === nodeKind){
+						let inputs = getElementWithValue(element);
+						if (inputs.length == 1) {
+							let aux = getValue(element);
+							error = error || aux[2];
+							let id = aux[0];
+							let value = aux[1];
+							if(aux[0]){
+								result[id] = value;
+							}else{
+								console.error(element, "Can't found a value on this node");
+								error = true;
+							}
+						} else {
+							let id = element.id;
+							if(!id){
+								console.error(element, "This element must have an id.")
+								error = true; 
+							}else{
+								let aux = getChildrenValues(element, stopIfError, error)
+								if(Array.isArray(aux[0])){
+									if(aux[0].length > 0){
+										result[id] = aux[0];
+									}
+								}else{
+									result[id] = new Object();
+									for(var key in aux[0]) {
+										result[id][key] = aux[0][key];
+									}
+								}
+								error = error || aux[1];
+							}
+						}
+					}else{
+						let inputs = getElementWithValue(element);
+						if(inputs.length > 0){
+							console.error(element, "Error: this node is not porpely formated. You have values outside of a section tag.");
+							error = true;
+						}
+					}
+				}
+				break;
+			default:
+				let inputs = getElementWithValue(node);
+				if(inputs.length > 0){
+					console.error(node, "Error: this node is not porpely formated. \nYou have values outside of a section or article tag. \nOr there are an article or a section without values");
+					error = true;
+				}
+				break;
+		}
+	}else{
+		console.error(node, "Error: this node is empty.");
+		error = true;
+	}
+	/*if(error){
+		console.log(node);
+	}*/
+
+	return [result, error];
+}
+
+/*function getSectionsValues(node) {
+	let result = new Object();
+	let error = false; 
+	for (let index = 0; index < node.children.length; index++) {
+		const element = node.children[index];
+		// Ignore nodes that aren't section, like Labels or buttons
+		if (element.tagName === "SECTION") {
+			let id = element.id; 
+			if(!id){
+				let aux = getValue(element);
+				error = error || aux[2];
+				let id = aux[0];
+				let value = aux[1];
+				if(aux[0]){
+					result[id] = value;
+				}else{
+					console.error(element, "Can't found a value on this node");
+					error = true;
+				}
+			}else{
+				let aux = getChildrenValues(element)
+				if(Array.isArray(aux[0])){
+					if(aux[0].length > 0){
+						result[id] = aux[0];
+						error = error || aux[1];
+					}
+				}else if(aux[0].hasOwnProperty("aux")){
+					result[id] = aux[0].aux;
+				}else{
+					console.error(aux, "aux");
+
+				}
+				
+			}
+		}else{
+			let inputs = getElementWithValue(element);
+			if(inputs.length == 1){
+				let aux = getValue(element);
+				error = error || aux[2];
+				let id = aux[0];
+				let value = aux[1];
+				if(aux[0]){
+					result[id] = value;
+				}else{
+					console.error(element, "Can't found a value on this node");
+					error = true;
+				}
+			}else if(inputs.length > 1){
+				console.error("Error: this node is not porpely formated. This node have more than one value.", element);
+			}
+		}
+	}
+	return [result, error];
+}*/
+
+var imageToAlt;
+function setAltToImage() {
+	imageToAlt.setAttribute("alt", document.getElementById("altImg").value);
+	document.getElementById("altImg").value = "";
+	imagesHaveAltAttribute();
+}
+function imagesHaveAltAttribute() {
+	let images = descriptionEditor.body.getElementsByTagName("img");
+	let resultCorrect = true;
+	for (const image of images) {
+		resultCorrect = resultCorrect && image.hasAttribute("alt") && image.getAttribute("alt").length > 0; 
+		if (!resultCorrect) {
+			image.scrollIntoView(true);
+			image.click();
+			imageToAlt = image;
+			$('#altModalInfo').modal('show')
+			break;
+		}
+	}
+	return resultCorrect;
+}
+function send() {
+	//let products = document.getElementById("products");
+	let [post, error] = getChildrenValues(document.getElementById("inputs"), true);
+	let keywords = [];
+	/*var reader = new FileReader();
+	reader.onload = function(event) {
+    // I usually remove the prefix to only keep data, but it depends on your server
+		var data = event.target.result.replace("data:"+ file.type +";base64,", '');
+		console.log(event);
+		
+		
+	}
+
+
+	reader.readAsDataURL(image.value);*/
+
+	let commonData = post.comonData;
+	let products; 
+	if(post.products){
+		products = post.products;
+	}
+
+	post = commonData; 
+	if(post.products){
+		post.products = products;
+	}
+
+
+	let keywordsElements = document.getElementsByClassName("keywords");
+	if(keywordsElements.length > 15){
+		error = true;
+		return; 
+	}
+	for(let keyword of keywordsElements){
+		if(stringIsCorrect(keyword.value)){
+			keywords.push(keyword.value)
+		}else{
+			alert("Hay keywords vacías.")
+			return;
+		}
+	}
+
+	if(post.metaTitle.length < 30 || post.metaTitle > 65){
+		error = true; 
+		document.getElementById("metaTitle").closest(".form-group").querySelector('.invalid-feedback').style.display = "block";
+		document.getElementById("metaTitle").focus();
+		return;
+	}
+
+	if(post.metaDescription.length < 100 || post.metaDescription > 210){
+		error = true; 
+		document.getElementById("metaDescription").closest(".form-group").querySelector('.invalid-feedback').style.display = "block";
+		document.getElementById("metaDescription").focus();
+		return;
+	}
+
+
+	post.keywords = keywords; 
+
+  console.log(error);
+  //imagesHaveAltAttribute();
+  
+	if(!error && imagesHaveAltAttribute()){
+
+		post["html"] = descriptionEditor.body.innerHTML;
+		let formData = new FormData();
+		formData.append("postImage", document.getElementById("imagePostImage").files[0]);
+		formData.append("json", JSON.stringify(post));
+		fetch(_SendPostURL, {
+				  method: 'POST', // or 'PUT'
+				  body: formData, // data can be `string` or {object}!
+				  /*headers:{
+				    'Content-Type': 'application/json'
+				  }*/
+				}).then(res => {
+					if(res.ok){
+						res.text().then(text => {
+							console.log(text); 
+							let data = JSON.parse(text);
+							console.log(data); 
+
+							
+
+						}).catch(err => {
+							console.log("Error",err);
+							
+						}); 
+					}
+				})
+				.catch(error => {
+					console.log("Error",error);
+				})
+				.then(response => console.log('Success:', response));
+		}
+
+	console.log(post);
+
+}
+
+
+	
+	
+	
+
+</script>
+
+{% endblock %}
